@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Leo Park",
+    "age": 21,
+    "bio": "Community college transfer \u2014 juggling two jobs and a very sincere dream in audio engineering. Let's grab boba and compare playlists.",
+    "image": "https://images.pexels.com/photos/32721696/pexels-photo-32721696.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Marcus Chen",
+    "age": 23,
+    "bio": "Robotics club lead who still burns ramen sometimes. I build silly gadgets to impress people I like \u2014 fair warning.",
+    "image": "https://images.pexels.com/photos/36934779/pexels-photo-36934779.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Devon Blake",
+    "age": 25,
+    "bio": "Line cook climbing toward sous-chef \u2014 my hands smell like garlic and ambition. Off Mondays; that's sacred.",
+    "image": "https://images.pexels.com/photos/28943399/pexels-photo-28943399.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Noah Reyes",
+    "age": 27,
+    "bio": "Firefighter + part-time carpenter. I will absolutely notice if your bookshelf is crooked. I'll fix it if you ask nicely.",
+    "image": "https://images.pexels.com/photos/31880922/pexels-photo-31880922.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Eli Hart",
+    "age": 29,
+    "bio": "High school coach and former D3 runner \u2014 I still carb-load emotionally. Looking for someone who likes slow Sunday miles.",
+    "image": "https://images.pexels.com/photos/15336911/pexels-photo-15336911.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Jordan Mills",
+    "age": 31,
+    "bio": "Music teacher \u2014 I can transpose your mood into a key signature. Kids think I'm cool; adults are harder to impress.",
+    "image": "https://images.pexels.com/photos/12311581/pexels-photo-12311581.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Sam Okonkwo",
+    "age": 34,
+    "bio": "Supply-chain analyst who grew up in three countries. I'll bore you with airport lounge opinions unless you stop me with a kiss.",
+    "image": "https://images.pexels.com/photos/10657877/pexels-photo-10657877.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Theo Nguyen",
+    "age": 36,
+    "bio": "Veterinarian \u2014 yes, I have dog hair on every jacket. I decompress with vinyl and very spicy pho.",
+    "image": "https://images.pexels.com/photos/30496625/pexels-photo-30496625.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Chris Vega",
+    "age": 38,
+    "bio": "Single dad to a seven-year-old comedian. My free nights are rare \u2014 if I offer one, I'm serious about showing up.",
+    "image": "https://images.pexels.com/photos/30124371/pexels-photo-30124371.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Alex Rivera",
+    "age": 40,
+    "bio": "Civil engineer \u2014 bridges, budgets, and a weakness for salsa dancing. I promise not to lecture you on load-bearing walls on date one.",
+    "image": "https://images.pexels.com/photos/14589344/pexels-photo-14589344.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Ben Carter",
+    "age": 22,
+    "bio": "Interning at a climate startup \u2014 I bike in the rain and call it character building. Coffee is non-negotiable.",
+    "image": "https://images.pexels.com/photos/6073151/pexels-photo-6073151.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Owen Patel",
+    "age": 24,
+    "bio": "Pharmacy student with a side gig tutoring orgo. I color-code my notes and my feelings \u2014 working on the second part.",
+    "image": "https://images.pexels.com/photos/12311572/pexels-photo-12311572.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Ryan Cho",
+    "age": 26,
+    "bio": "Freelance motion designer \u2014 I see easing curves in real life. Date idea: bad indie film, good commentary track by us.",
+    "image": "https://images.pexels.com/photos/10919461/pexels-photo-10919461.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Jake Morales",
+    "age": 28,
+    "bio": "Social worker \u2014 heavy days, soft heart. I recharge with pickup soccer and phone calls with my abuela.",
+    "image": "https://images.pexels.com/photos/36053652/pexels-photo-36053652.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Tyler Brooks",
+    "age": 30,
+    "bio": "Commercial pilot on reserve weeks \u2014 my schedule is chaos but my texts are on time. Let's meet between time zones.",
+    "image": "https://images.pexels.com/photos/35129364/pexels-photo-35129364.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Isaac Kim",
+    "age": 33,
+    "bio": "Actuary who plays stand-up open mics badly on purpose. I can price risk; I cannot price my taste in sneakers.",
+    "image": "https://images.pexels.com/photos/26834972/pexels-photo-26834972.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Dylan Foster",
+    "age": 35,
+    "bio": "Journalist covering city hall \u2014 cynical headline, hopeful heart. I know every 24-hour diner worth defending.",
+    "image": "https://images.pexels.com/photos/26872232/pexels-photo-26872232.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Nate Wilson",
+    "age": 20,
+    "bio": "Gap year ski bum saving for tuition \u2014 I work rentals and pretend I'm training for the Olympics. Apr\u00e8s-ski is a lifestyle.",
+    "image": "https://images.pexels.com/photos/10816007/pexels-photo-10816007.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Ethan Cole",
+    "age": 37,
+    "bio": "Electrician running a small crew \u2014 I fix shorts in walls and in conversation. Weekend hobby: restoring a motorcycle I'll finish someday.",
+    "image": "https://images.pexels.com/photos/6215724/pexels-photo-6215724.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  },
+  {
+    "name": "Miles Turner",
+    "age": 41,
+    "bio": "Nonprofit program director \u2014 I've read every grant narrative clich\u00e9 and still believe in the work. Let's debrief over natural wine.",
+    "image": "https://images.pexels.com/photos/16764648/pexels-photo-16764648.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+  }
+]
