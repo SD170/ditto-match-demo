@@ -13,7 +13,7 @@ export function MessageFab() {
   }
 
   return (
-    <div className="fixed bottom-12 right-12 z-50">
+    <div className="fixed bottom-12 right-12 z-[400]">
       {open && (
         <div className="glass-panel absolute bottom-20 right-0 w-[310px] rounded-xl border border-white/15 p-4 text-left text-sm text-zinc-100 shadow-2xl">
           <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">New message</p>

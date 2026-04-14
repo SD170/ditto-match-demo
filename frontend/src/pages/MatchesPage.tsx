@@ -287,7 +287,7 @@ export function MatchesPage() {
                         aria-expanded={vibeHelpOpen}
                         aria-controls="vibe-help-popover"
                         aria-label="How matching works"
-                        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/70 transition-colors hover:border-primary/50 hover:bg-primary/15 hover:text-primary"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/70 transition-colors duration-150 md:hover:border-primary/50 md:hover:bg-primary/15 md:hover:text-primary active:scale-95 active:border-primary/50 active:bg-primary/15 active:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
                       >
                         <span className="material-symbols-outlined text-[16px] leading-none">info</span>
                       </button>
@@ -295,7 +295,7 @@ export function MatchesPage() {
                         <div
                           id="vibe-help-popover"
                           role="tooltip"
-                          className="absolute bottom-full left-1/2 z-[70] mb-2 w-[min(calc(100vw-2rem),17rem)] -translate-x-1/2 rounded-xl border border-white/10 bg-zinc-950/98 p-3 text-left text-xs font-medium leading-relaxed text-zinc-100 shadow-xl backdrop-blur-xl md:left-0 md:translate-x-0"
+                          className="absolute bottom-full left-1/2 z-[70] mb-2 w-[min(calc(100vw-2rem),17rem)] -translate-x-1/2 rounded-xl border border-white/15 bg-black/95 p-3 text-left text-xs font-medium leading-relaxed text-zinc-100 shadow-2xl shadow-black/70 ring-1 ring-black/60 backdrop-blur-2xl md:left-0 md:translate-x-0"
                         >
                           Who should we match you with?{' '}
                           <span className="text-primary">Describe your vibe</span> in the box, then tap{' '}
