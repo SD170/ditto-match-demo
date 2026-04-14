@@ -1,13 +1,23 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
-import { AppLayout } from './components/layout/AppLayout'
-import { AboutPage } from './pages/AboutPage'
-import { LandingPage } from './pages/LandingPage'
-import { MatchesPage } from './pages/MatchesPage'
+import { AppLayout } from './components/layout'
+import { AboutPage, LandingPage, MatchesPage } from './pages'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [pathname])
+
+  return null
+}
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<LandingPage />} />
