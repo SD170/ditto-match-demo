@@ -1,4 +1,4 @@
-import { useEffect, type CSSProperties, type ReactNode } from 'react'
+import { useCallback, useEffect, type CSSProperties, type ReactNode } from 'react'
 import Lottie from 'lottie-react'
 import { useNavigate } from 'react-router-dom'
 
@@ -89,10 +89,10 @@ type MatchCelebrationModalProps = {
 
 export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }: MatchCelebrationModalProps) {
   const navigate = useNavigate()
-  const closeToAbout = () => {
+  const closeToAbout = useCallback(() => {
     onClose()
     navigate('/about')
-  }
+  }, [navigate, onClose])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

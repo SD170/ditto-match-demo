@@ -168,13 +168,13 @@ export function MatchesPage() {
   return (
     <>
       <StepRail step="02" label="Curate" />
-      <main className="mx-auto w-full max-w-screen-2xl flex-1 px-6 py-12 pb-52 md:px-12 md:pb-48">
+      <main className="mx-auto w-full max-w-screen-2xl flex-1 px-4 py-8 pb-52 sm:px-6 sm:py-12 md:px-12 md:pb-48">
         <section className="mb-12 text-center md:text-left">
           <div className="flex flex-col gap-2">
             <span className="font-label text-[10px] font-black uppercase tracking-[0.4em] text-primary/60">
               Curated selection
             </span>
-            <h1 className="font-headline text-5xl font-extrabold leading-[1.02] tracking-tighter text-white md:text-8xl md:leading-[0.98]">
+            <h1 className="font-headline text-4xl font-extrabold leading-[1.04] tracking-tighter text-white sm:text-5xl md:text-8xl md:leading-[0.98]">
               Your <span className="italic text-primary">potential matches</span>
             </h1>
             <p className="mt-3 text-xs uppercase tracking-[0.2em] text-zinc-500 md:mt-5">
@@ -212,7 +212,7 @@ export function MatchesPage() {
         )}
 
         {people && people.length > 0 && (
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:grid-cols-4">
             {people.map((p) => (
               <div
                 key={`${p.name}-${p.age}`}
@@ -226,8 +226,8 @@ export function MatchesPage() {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-8 pt-20">
-                  <h3 className="mb-2 text-3xl font-black text-white">{p.name}</h3>
+                <div className="absolute inset-x-0 bottom-0 p-6 pt-20 sm:p-8">
+                  <h3 className="mb-2 text-2xl font-black text-white sm:text-3xl">{p.name}</h3>
                   <p className="mb-6 line-clamp-2 text-sm italic text-zinc-300">{p.bio}</p>
                   <button
                     type="button"
@@ -254,7 +254,7 @@ export function MatchesPage() {
         />
       )}
 
-      <div className="pointer-events-none fixed bottom-0 left-0 right-0 z-[60] bg-gradient-to-t from-black via-black/95 to-transparent p-4 md:p-6">
+      <div className="pointer-events-none fixed bottom-0 left-0 right-0 z-[60] bg-gradient-to-t from-black via-black/95 to-transparent p-3 sm:p-4 md:p-6">
         <div className="vibe-panel-container pointer-events-auto mx-auto w-full max-w-3xl">
           {matchErr && (
             <div className="relative mb-2 rounded-lg border border-red-400/35 bg-black/85 py-2 pl-3 pr-10 text-xs text-red-100 shadow-md backdrop-blur-sm">
