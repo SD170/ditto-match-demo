@@ -8,6 +8,7 @@ const LINKS = {
   github: 'https://github.com/SD170',
   linkedin: 'https://www.linkedin.com/in/sd170',
   email: 'mailto:duttasaswata7@gmail.com',
+  resume: '/resume.pdf',
   authena: 'https://authena.xyz/',
   bnbContract: 'https://bscscan.com/address/0x7112b21b49d3bc368e88d8021a9b7d6a05284444',
   dittoBnbNftPost: 'https://x.com/Ditto__AI/status/2033165460187799699',
@@ -145,7 +146,7 @@ export function AboutPage() {
             >
               this post
             </a>{' '}
-            and liked the direction. Contract for the curious:{' '}
+            and liked the direction. I saw the contract link:{' '}
             <a
               href={LINKS.bnbContract}
               target="_blank"
@@ -156,6 +157,32 @@ export function AboutPage() {
             </a>
             .
           </p>
+        </div>
+
+        <div className="mt-8 rounded-[1.75rem] border border-primary/30 bg-gradient-to-br from-primary/[0.12] via-black/50 to-cyan-400/[0.09] p-6 shadow-[0_0_40px_rgba(247,72,177,0.12)] md:p-8">
+          <p className="text-[10px] font-black uppercase tracking-[0.35em] text-primary/90">Resume drop</p>
+          <h2 className="mt-2 font-headline text-2xl font-black tracking-tight text-white md:text-3xl">
+            If you want the receipts, here&apos;s the full PDF.
+          </h2>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a
+              href={LINKS.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border border-primary/40 bg-primary/20 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-white transition-colors hover:bg-primary/35"
+            >
+              <span className="material-symbols-outlined text-[16px]">description</span>
+              View resume
+            </a>
+            <a
+              href={LINKS.resume}
+              download
+              className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-black/35 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-zinc-200 transition-colors hover:border-primary/40 hover:text-white"
+            >
+              <span className="material-symbols-outlined text-[16px]">download</span>
+              Download PDF
+            </a>
+          </div>
         </div>
 
         <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-[0.2em] text-zinc-500">

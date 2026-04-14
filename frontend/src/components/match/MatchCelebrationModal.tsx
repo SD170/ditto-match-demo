@@ -89,13 +89,18 @@ type MatchCelebrationModalProps = {
 
 export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }: MatchCelebrationModalProps) {
   const navigate = useNavigate()
+  const closeToAbout = () => {
+    onClose()
+    navigate('/about')
+  }
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+      if (e.key === 'Escape') closeToAbout()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [onClose])
+  }, [closeToAbout])
 
   return (
     <div
@@ -103,26 +108,32 @@ export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }
       role="dialog"
       aria-modal="true"
       aria-labelledby="celebration-title"
-      onClick={onClose}
+      onClick={closeToAbout}
     >
-      <div
-        className="relative z-10 flex max-h-[90vh] w-full max-w-4xl items-stretch justify-center gap-1 sm:gap-2"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="relative z-10 flex max-h-[90vh] w-full max-w-4xl items-stretch justify-center gap-1 sm:gap-2">
         <GraffitiRail side="left" />
 
         <div
-          className="flex min-h-0 min-w-0 max-w-lg flex-1 flex-col overflow-hidden rounded-[1.75rem] border-2 border-primary/50 bg-zinc-950/95 shadow-[0_0_60px_rgba(247,72,177,0.35)] md:max-w-md md:rounded-[2rem]"
+          className="relative flex min-h-0 min-w-0 max-w-lg flex-1 flex-col overflow-hidden rounded-[1.75rem] border-2 border-primary/50 bg-zinc-950/95 shadow-[0_0_60px_rgba(247,72,177,0.35)] md:max-w-md md:rounded-[2rem]"
+          onClick={(e) => e.stopPropagation()}
           style={{
             boxShadow:
               '0 0 0 1px rgba(255,255,255,0.06), 0 24px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.08)',
           }}
         >
+          <button
+            type="button"
+            onClick={closeToAbout}
+            className="absolute right-3 top-3 z-30 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/65 text-white/90 backdrop-blur-md transition-colors hover:border-primary/50 hover:bg-primary/20 hover:text-white"
+            aria-label="Close and go to About"
+          >
+            <span className="material-symbols-outlined text-[20px] leading-none">close</span>
+          </button>
           <div className="pointer-events-none absolute -inset-px -z-10 rounded-[inherit] bg-gradient-to-br from-primary/25 via-transparent to-cyan-500/15 opacity-80 blur-sm" />
 
           <div className="shrink-0 px-5 pb-3 pt-5 md:px-7 md:pt-6">
             <p className="mb-1 text-center font-label text-[9px] font-black uppercase tracking-[0.45em] text-primary/80">
-              Congregation
+              Congratulations
             </p>
             <h2
               id="celebration-title"
@@ -169,10 +180,7 @@ export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }
 
               <button
                 type="button"
-                onClick={() => {
-                  onClose()
-                  navigate('/about')
-                }}
+                onClick={closeToAbout}
                 className="group relative z-10 w-full rounded-2xl border-2 border-dashed border-primary/60 bg-gradient-to-r from-primary/15 via-white/5 to-cyan-400/10 px-5 py-4 text-left ring-2 ring-transparent transition-all hover:border-primary hover:from-primary/25 hover:shadow-[0_0_28px_rgba(247,72,177,0.22)] hover:ring-primary/20 md:px-6 md:py-5"
               >
                 <span className="pointer-events-none absolute -right-0.5 -top-2 z-20 font-headline text-2xl font-black text-primary plot-arrow-bob">
