@@ -2,4 +2,5 @@ backend/.venv/
 **/__pycache__/
 *.pyc
 backend/.env
+backend/app/data/metrics.json
 .DS_Store
