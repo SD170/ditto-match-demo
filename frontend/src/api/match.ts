@@ -1,4 +1,5 @@
 import type { MatchApiResponse, MatchRequestBody } from '../types/person'
+import { apiUrl } from './base'
 
 function parseErrorDetail(text: string): string {
   let msg = text
@@ -17,7 +18,7 @@ function parseErrorDetail(text: string): string {
 }
 
 export async function postMatch(body: MatchRequestBody): Promise<MatchApiResponse> {
-  const res = await fetch('/api/match', {
+  const res = await fetch(apiUrl('/api/match'), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
