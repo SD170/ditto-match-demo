@@ -204,7 +204,12 @@ export function MatchesPage() {
         )}
 
         {people === null && (
-          <p className="text-center text-sm text-zinc-500 md:text-left">Loading your grid…</p>
+          <div className="rounded-2xl border border-white/10 bg-black/55 px-4 py-3 text-center text-sm text-zinc-300 backdrop-blur-md md:text-left">
+            <p className="font-medium text-zinc-200">Waking up the Render backend…</p>
+            <p className="mt-1 text-zinc-400">
+              I&apos;m short on budget, so cold starts happen. Hold on a sec while your cards load.
+            </p>
+          </div>
         )}
 
         {people && people.length === 0 && !error && (
