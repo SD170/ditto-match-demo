@@ -5,6 +5,7 @@ export type Person = {
   age: number
   bio: string
   image: string
+  persona_graph?: Record<string, unknown>
 }
 
 export type MatchApiResponse = {

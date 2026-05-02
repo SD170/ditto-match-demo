@@ -2,121 +2,1401 @@
   {
     "name": "Maya Singh",
     "age": 20,
-    "bio": "Gap year before med \u2014 I'm volunteering at a clinic and learning to sleep again. Want someone who thinks soup dumplings fix most problems.",
-    "image": "https://images.pexels.com/photos/34970549/pexels-photo-34970549.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Gap year before med — I'm volunteering at a clinic and learning to sleep again. Want someone who thinks soup dumplings fix most problems.",
+    "image": "https://images.pexels.com/photos/34970549/pexels-photo-34970549.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Maya is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Maya gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Maya may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Student Health Clinic",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Student Health Clinic + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "soup dumplings",
+          "ginger tea",
+          "fries"
+        ],
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "soft indie + focus beats",
+          "rainy night walks"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "gym streak",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Riley Thompson",
     "age": 22,
     "bio": "Art history + iced latte dependency. I'll narrate any painting like it's reality TV. Bonus if you can sprint a museum wing without guilt.",
-    "image": "https://images.pexels.com/photos/26728099/pexels-photo-26728099.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/26728099/pexels-photo-26728099.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Riley is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Riley gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Riley may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Campus Gallery",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Campus Gallery + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "iced vanilla latte",
+          "mango lassi",
+          "edamame"
+        ],
+        "favorite_date_food": "iced vanilla latte",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "museum-core classical",
+          "pre-game confidence"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "long walks",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Zoe Martinez",
     "age": 24,
-    "bio": "Field biologist \u2014 I smell like trail mix and sunscreen half the year. Looking for someone who won't flinch at a 5am hike pitch.",
-    "image": "https://images.pexels.com/photos/7468194/pexels-photo-7468194.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Field biologist — I smell like trail mix and sunscreen half the year. Looking for someone who won't flinch at a 5am hike pitch.",
+    "image": "https://images.pexels.com/photos/7468194/pexels-photo-7468194.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Zoe is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Zoe gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Zoe may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Riverside Trailhead",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Riverside Trailhead + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "taco bowl",
+          "cold brew",
+          "garlic knots"
+        ],
+        "favorite_date_food": "taco bowl",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "lo-fi study jazz",
+          "deep focus"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "pickup soccer",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Ava Lindstrom",
     "age": 26,
     "bio": "Night-shift nurse new to days off that aren't just recovery naps. First date: daylight, caffeine, zero small talk about 'how tired' we are.",
-    "image": "https://images.pexels.com/photos/30468636/pexels-photo-30468636.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/30468636/pexels-photo-30468636.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Ava is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Ava gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Ava may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Sunrise Coffee Kiosk",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Sunrise Coffee Kiosk + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "matcha soft serve",
+          "protein bowl",
+          "mochi donut"
+        ],
+        "favorite_date_food": "matcha soft serve",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "main-character night walk playlist",
+          "Sunday reset"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "stretching they keep forgetting",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Chloe Bennett",
     "age": 28,
     "bio": "Left agency life for ceramics. My hands are always a little dusty. If you respect the kiln schedule, you respect me.",
-    "image": "https://images.pexels.com/photos/7093719/pexels-photo-7093719.png?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/7093719/pexels-photo-7093719.png?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Chloe is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Chloe gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Chloe may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "West Arts Kiln Studio",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "West Arts Kiln Studio + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "shawarma wrap",
+          "ginger tea",
+          "fries"
+        ],
+        "favorite_date_food": "shawarma wrap",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "soft indie + focus beats",
+          "rainy night walks"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "gym streak",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Priya Desai",
     "age": 30,
     "bio": "Product designer who still sketches on paper. I want a date where we redesign a bad menu together and tip well anyway.",
-    "image": "https://images.pexels.com/photos/34534596/pexels-photo-34534596.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/34534596/pexels-photo-34534596.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Priya is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Priya gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Priya may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Design Library",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Design Library + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "ramen",
+          "mango lassi",
+          "edamame"
+        ],
+        "favorite_date_food": "ramen",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "hyperpop gym mix",
+          "pre-game confidence"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "long walks",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Emma Walsh",
     "age": 32,
-    "bio": "PhD candidate in econ \u2014 I chart feelings like they're time series. Seeking someone who laughs at my regression jokes.",
-    "image": "https://images.pexels.com/photos/3768720/pexels-photo-3768720.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "PhD candidate in econ — I chart feelings like they're time series. Seeking someone who laughs at my regression jokes.",
+    "image": "https://images.pexels.com/photos/3768720/pexels-photo-3768720.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Emma is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Emma gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Emma may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Graduate Study Commons",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Graduate Study Commons + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "soup dumplings",
+          "cold brew",
+          "garlic knots"
+        ],
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "museum-core classical",
+          "deep focus"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "pickup soccer",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Hannah Lee",
     "age": 34,
-    "bio": "Returned to school for speech pathology after a decade in hospitality. I read lips at loud bars \u2014 it's a party trick and a coping skill.",
-    "image": "https://images.pexels.com/photos/16097514/pexels-photo-16097514.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Returned to school for speech pathology after a decade in hospitality. I read lips at loud bars — it's a party trick and a coping skill.",
+    "image": "https://images.pexels.com/photos/16097514/pexels-photo-16097514.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Hannah is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Hannah gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Hannah may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Glasshouse Cafe",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Glasshouse Cafe + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "taco bowl",
+          "protein bowl",
+          "mochi donut"
+        ],
+        "favorite_date_food": "taco bowl",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "museum-core classical",
+          "Sunday reset"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "stretching they keep forgetting",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Sofia Rossi",
     "age": 35,
-    "bio": "Divorced, not damaged \u2014 coparenting a very opinionated cat. I cook loud Italian food and want someone who shows up hungry.",
-    "image": "https://images.pexels.com/photos/30479371/pexels-photo-30479371.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Divorced, not damaged — coparenting a very opinionated cat. I cook loud Italian food and want someone who shows up hungry.",
+    "image": "https://images.pexels.com/photos/30479371/pexels-photo-30479371.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Sofia is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Sofia gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Sofia may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Night Market Alley",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Night Market Alley + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "garlic noodles",
+          "ginger tea",
+          "fries"
+        ],
+        "favorite_date_food": "garlic noodles",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "soft indie + focus beats",
+          "rainy night walks"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "gym streak",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Jade Patterson",
     "age": 21,
-    "bio": "D1 track \u2014 my calendar is splits and study hall. Cute if you can keep pace on an easy jog and pretend you're not dying.",
-    "image": "https://images.pexels.com/photos/36363694/pexels-photo-36363694.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "D1 track — my calendar is splits and study hall. Cute if you can keep pace on an easy jog and pretend you're not dying.",
+    "image": "https://images.pexels.com/photos/36363694/pexels-photo-36363694.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Jade is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Jade gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Jade may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Athletics Loop",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Athletics Loop + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "shawarma wrap",
+          "mango lassi",
+          "edamame"
+        ],
+        "favorite_date_food": "shawarma wrap",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "high-BPM pop",
+          "pre-game confidence"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "long walks",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Nina Alvarez",
     "age": 23,
-    "bio": "First-gen STEM \u2014 I tutor calc to pay rent and stress-bake conchas. Date me if you can handle flour on the counter.",
-    "image": "https://images.pexels.com/photos/9304685/pexels-photo-9304685.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "First-gen STEM — I tutor calc to pay rent and stress-bake conchas. Date me if you can handle flour on the counter.",
+    "image": "https://images.pexels.com/photos/9304685/pexels-photo-9304685.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Nina is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Nina gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Nina may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "STEM Tutoring Center",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "STEM Tutoring Center + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "conchas",
+          "cold brew",
+          "garlic knots"
+        ],
+        "favorite_date_food": "conchas",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "lo-fi study jazz",
+          "deep focus"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "pickup soccer",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Lily Chen",
     "age": 27,
     "bio": "UX researcher who actually talks to users. I'll take notes on our banter. Red flag if you hate sticky notes.",
-    "image": "https://images.pexels.com/photos/29852852/pexels-photo-29852852.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/29852852/pexels-photo-29852852.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Lily is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Lily gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Lily may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Glasshouse Cafe",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Glasshouse Cafe + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "soup dumplings",
+          "protein bowl",
+          "mochi donut"
+        ],
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "ambient focus",
+          "Sunday reset"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "stretching they keep forgetting",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Grace Okafor",
     "age": 29,
     "bio": "Corporate lawyer by day, Afrobeat dance classes by night. I need someone who doesn't ask why I'm still energetic at 10pm.",
-    "image": "https://images.pexels.com/photos/29811345/pexels-photo-29811345.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "image": "https://images.pexels.com/photos/29811345/pexels-photo-29811345.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Grace is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Grace gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Grace may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Downtown Courthouse Steps",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Downtown Courthouse Steps + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "taco bowl",
+          "ginger tea",
+          "fries"
+        ],
+        "favorite_date_food": "taco bowl",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "Afrobeats + dancehall",
+          "rainy night walks"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "gym streak",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Violet Harper",
     "age": 31,
-    "bio": "Photojournalism MFA \u2014 I shoot protests and farmers' markets with the same lens. Let's wander until the light gets honest.",
-    "image": "https://images.pexels.com/photos/20022699/pexels-photo-20022699.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Photojournalism MFA — I shoot protests and farmers' markets with the same lens. Let's wander until the light gets honest.",
+    "image": "https://images.pexels.com/photos/20022699/pexels-photo-20022699.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Violet is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Violet gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Violet may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Old Market Street",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Old Market Street + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "spicy pho",
+          "mango lassi",
+          "edamame"
+        ],
+        "favorite_date_food": "spicy pho",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "hyperpop gym mix",
+          "pre-game confidence"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "long walks",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Isla MacKenzie",
     "age": 36,
-    "bio": "High school counselor \u2014 I've heard every excuse; yours better be creative. I kayak when I need to not fix anyone for an hour.",
-    "image": "https://images.pexels.com/photos/8871851/pexels-photo-8871851.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "High school counselor — I've heard every excuse; yours better be creative. I kayak when I need to not fix anyone for an hour.",
+    "image": "https://images.pexels.com/photos/8871851/pexels-photo-8871851.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Isla is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Isla gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Isla may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Boathouse Dock",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Boathouse Dock + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "shawarma wrap",
+          "cold brew",
+          "garlic knots"
+        ],
+        "favorite_date_food": "shawarma wrap",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "lo-fi study jazz",
+          "deep focus"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "pickup soccer",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Mia Torres",
     "age": 38,
-    "bio": "Two kids, one ex, zero drama \u2014 I run a bookkeeping side hustle and a tight ship. Looking for grown-up chemistry and bad puns.",
-    "image": "https://images.pexels.com/photos/10437480/pexels-photo-10437480.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Two kids, one ex, zero drama — I run a bookkeeping side hustle and a tight ship. Looking for grown-up chemistry and bad puns.",
+    "image": "https://images.pexels.com/photos/10437480/pexels-photo-10437480.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Mia is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Mia gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Mia may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Glasshouse Cafe",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Glasshouse Cafe + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "ramen",
+          "protein bowl",
+          "mochi donut"
+        ],
+        "favorite_date_food": "ramen",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "main-character night walk playlist",
+          "Sunday reset"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "stretching they keep forgetting",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Ella Brooks",
     "age": 40,
-    "bio": "Chef-owner of a tiny brunch spot \u2014 I'm always tasting something. If you can't do Tuesday at 3pm, we won't work; that's my weekend.",
-    "image": "https://images.pexels.com/photos/25015401/pexels-photo-25015401.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Chef-owner of a tiny brunch spot — I'm always tasting something. If you can't do Tuesday at 3pm, we won't work; that's my weekend.",
+    "image": "https://images.pexels.com/photos/25015401/pexels-photo-25015401.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Ella is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Ella gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Ella may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Tiny Brunch Counter",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Tiny Brunch Counter + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "brunch tacos",
+          "ginger tea",
+          "fries"
+        ],
+        "favorite_date_food": "brunch tacos",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "soft indie + focus beats",
+          "rainy night walks"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "gym streak",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   },
   {
     "name": "Ruby Santos",
     "age": 25,
-    "bio": "Paramedic \u2014 dark humor required, squeamish people kindly swipe past. I decompress with bad reality TV and good sourdough.",
-    "image": "https://images.pexels.com/photos/28289074/pexels-photo-28289074.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Paramedic — dark humor required, squeamish people kindly swipe past. I decompress with bad reality TV and good sourdough.",
+    "image": "https://images.pexels.com/photos/28289074/pexels-photo-28289074.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Ruby is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Ruby gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Ruby may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Riverside Walk",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Riverside Walk + Corner Market loop",
+        "mobility_pattern": "likes public first-meet locations"
+      },
+      "calendar": {
+        "free_windows": [
+          "Thursday 7:15 PM",
+          "Saturday 11 AM"
+        ],
+        "energy_notes": "likes one planned thing per evening"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "sourdough toast",
+          "mango lassi",
+          "edamame"
+        ],
+        "favorite_date_food": "sourdough toast",
+        "diet_notes": "will forgive a mid venue if the sauce is good"
+      },
+      "spotify": {
+        "top_moods": [
+          "hyperpop gym mix",
+          "pre-game confidence"
+        ],
+        "concert_energy": "prefers talking before loud music"
+      },
+      "health_activity": {
+        "routine": "long walks",
+        "date_energy": "post-workout food is a cheat code"
+      },
+      "message_style": {
+        "pattern": "uses dry humor to test comfort",
+        "repair_hint": "prefers a concrete next plan after friction"
+      }
+    }
   },
   {
     "name": "Clara Jensen",
     "age": 33,
-    "bio": "Architect renovating a fixer-upper \u2014 dating me includes drywall dust and strong opinions about trim. I pay for pizza.",
-    "image": "https://images.pexels.com/photos/8872747/pexels-photo-8872747.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Architect renovating a fixer-upper — dating me includes drywall dust and strong opinions about trim. I pay for pizza.",
+    "image": "https://images.pexels.com/photos/8872747/pexels-photo-8872747.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Clara is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Clara gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Clara may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Campus Night Market",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Campus Night Market + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred"
+      },
+      "calendar": {
+        "free_windows": [
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
+        ],
+        "energy_notes": "best after structured obligations"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "wood-fired pizza",
+          "cold brew",
+          "garlic knots"
+        ],
+        "favorite_date_food": "wood-fired pizza",
+        "diet_notes": "likes shareable snacks"
+      },
+      "spotify": {
+        "top_moods": [
+          "lo-fi study jazz",
+          "deep focus"
+        ],
+        "concert_energy": "small venue over arena"
+      },
+      "health_activity": {
+        "routine": "pickup soccer",
+        "date_energy": "walk-and-talk works well"
+      },
+      "message_style": {
+        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
+        "repair_hint": "responds well to explicit reassurance"
+      }
+    }
   },
   {
     "name": "Naomi Park",
     "age": 42,
-    "bio": "Career-switching into tech from publishing \u2014 I'm the oldest in the bootcamp and the calmest in a code review. Teach me your shortcuts.",
-    "image": "https://images.pexels.com/photos/5804201/pexels-photo-5804201.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
+    "bio": "Career-switching into tech from publishing — I'm the oldest in the bootcamp and the calmest in a code review. Teach me your shortcuts.",
+    "image": "https://images.pexels.com/photos/5804201/pexels-photo-5804201.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
+    "persona_graph": {
+      "chatgpt_memory": [
+        "Naomi is most attracted to people who notice small details and follow through after the first burst of chemistry.",
+        "Naomi gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
+        "Conflict pattern: Naomi may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      ],
+      "claude_notes": {
+        "values": [
+          "specificity",
+          "playfulness",
+          "reliability"
+        ],
+        "green_flags": [
+          "consistent texting",
+          "curiosity about their routine",
+          "dates with built-in conversation props"
+        ],
+        "watchouts": [
+          "performative mystery",
+          "last-minute logistics chaos",
+          "being treated like a profile instead of a person"
+        ]
+      },
+      "google_maps": {
+        "frequent_places": [
+          "Glasshouse Cafe",
+          "Campus Library",
+          "Corner Market"
+        ],
+        "date_zone": "Glasshouse Cafe + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours"
+      },
+      "calendar": {
+        "free_windows": [
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
+        ],
+        "energy_notes": "social battery drops after 10 PM"
+      },
+      "doordash": {
+        "repeat_orders": [
+          "shawarma wrap",
+          "protein bowl",
+          "mochi donut"
+        ],
+        "favorite_date_food": "shawarma wrap",
+        "diet_notes": "comfort food beats fancy tasting menus"
+      },
+      "spotify": {
+        "top_moods": [
+          "main-character night walk playlist",
+          "Sunday reset"
+        ],
+        "concert_energy": "dances if the other person starts"
+      },
+      "health_activity": {
+        "routine": "stretching they keep forgetting",
+        "date_energy": "avoid intense morning plans"
+      },
+      "message_style": {
+        "pattern": "sends memes as bids for attention",
+        "repair_hint": "likes direct apologies without drama"
+      }
+    }
   }
 ]

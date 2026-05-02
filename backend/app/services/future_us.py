@@ -1,5 +1,13 @@
 from __future__ import annotations
 
+import json
+import re
+from typing import Any
+
+import httpx
+from pydantic import ValidationError
+
+from app.config import settings
 from app.schemas import (
     BestDatePlan,
     ChemistryDimension,
@@ -10,185 +18,193 @@ from app.schemas import (
     FutureUsScenario,
 )
 
+SYSTEM_PROMPT = """You are Future Us, Ditto's agentic chemistry simulation engine.
 
-def _contains(text: str, *needles: str) -> bool:
-    lowered = text.lower()
-    return any(needle in lowered for needle in needles)
+You are NOT predicting a relationship. You simulate possible early dynamics using opt-in context and relationship-science-informed dimensions. Use concrete evidence from the provided persona graphs: ChatGPT/Claude memory, Google Maps routines, Calendar, DoorDash/food orders, Spotify/music, health/activity, and message-style notes.
+
+Output ONLY valid JSON with this exact shape:
+{
+  "title": "Future Us",
+  "subtitle": "Private agents simulated possible dynamics — not a prediction.",
+  "match_name": "...",
+  "couple_thesis": "catchy 3-7 word archetype",
+  "confidence": {"score": 0-100, "label": "High context confidence", "explanation": "..."},
+  "connected_signals": [
+    {"source": "ChatGPT Memory", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Google Maps", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "DoorDash", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Spotify", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Calendar", "status": "...", "insight": "...", "confidence": 0-100}
+  ],
+  "chemistry_map": [
+    {"name": "Rhythm Fit", "score": 0-100, "signal": "...", "opportunity": "..."},
+    {"name": "Emotional Safety", "score": 0-100, "signal": "...", "opportunity": "..."},
+    {"name": "Novelty + Growth", "score": 0-100, "signal": "...", "opportunity": "..."},
+    {"name": "Conflict Repair", "score": 0-100, "signal": "...", "opportunity": "..."},
+    {"name": "Intention Alignment", "score": 0-100, "signal": "...", "opportunity": "..."},
+    {"name": "Practical Logistics", "score": 0-100, "signal": "...", "opportunity": "..."}
+  ],
+  "scenarios": [
+    {"title": "Natural Overlap", "timeframe": "...", "prompt": "...", "simulation": "...", "best_move": "...", "watchout": "..."},
+    {"title": "First Misread", "timeframe": "...", "prompt": "...", "simulation": "...", "best_move": "...", "watchout": "..."},
+    {"title": "Repair Moment", "timeframe": "...", "prompt": "...", "simulation": "...", "best_move": "...", "watchout": "..."},
+    {"title": "Growth Arc", "timeframe": "...", "prompt": "...", "simulation": "...", "best_move": "...", "watchout": "..."}
+  ],
+  "best_date": {
+    "title": "...",
+    "location": "...",
+    "suggested_time": "...",
+    "plan": ["...", "...", "...", "..."],
+    "why_it_works": "...",
+    "invite_text": "..."
+  },
+  "privacy_note": "Private simulation. Not a prediction. Connected signals stay private unless shared with consent.",
+  "research_note": "Uses relationship-specific signals like responsiveness, appreciation, conflict repair, commitment, and logistics."
+}
+
+Rules:
+- Be specific, cinematic, Gen-Z-readable, and product-demo impressive.
+- Do not say soulmates, guarantee, predict, probability of success, or compatibility prediction.
+- Confidence means context coverage, not relationship success.
+- Use the exact six chemistry dimension names listed above.
+- Use exactly four scenarios with the scenario titles listed above.
+- Make the best_date actionable and low-pressure.
+"""
 
 
-def _persona_archetype(user_bio: str, match_bio: str) -> str:
-    combined = f"{user_bio} {match_bio}".lower()
-    if _contains(combined, "art", "museum", "design", "ux", "ceramic", "sketch"):
-        return "The Soft-Launch Culture Explorers"
-    if _contains(combined, "gym", "track", "hike", "run", "health", "strava"):
-        return "The Momentum Builders"
-    if _contains(combined, "food", "ramen", "dumpling", "cook", "bake", "coffee", "latte"):
-        return "The Low-Key Taste Testers"
-    return "The Slow-Burn Campus Explorers"
+def _extract_json_object(text: str) -> dict[str, Any]:
+    text = text.strip()
+    fence = re.match(r"^```(?:json)?\s*([\s\S]*?)\s*```$", text)
+    if fence:
+        text = fence.group(1).strip()
+    if text.startswith("{"):
+        return json.loads(text)
+    start = text.find("{")
+    end = text.rfind("}")
+    if start >= 0 and end > start:
+        return json.loads(text[start : end + 1])
+    return json.loads(text)
 
 
-def build_future_us_simulation(req: FutureUsRequest) -> FutureUsResponse:
-    """Return a deterministic demo simulation powered by synthetic opt-in context.
+def _future_us_llm() -> tuple[str, str, str] | None:
+    # Prefer OpenRouter for this feature because the user can select free/cheap models.
+    if settings.openrouter_api_key:
+        return settings.openrouter_api_key, settings.openrouter_base_url, settings.openrouter_model
+    if settings.cerebras_api_key:
+        return settings.cerebras_api_key, settings.cerebras_base_url, settings.cerebras_model
+    if settings.openai_api_key:
+        return settings.openai_api_key, settings.openai_base_url, settings.openai_model
+    return None
 
-    This deliberately avoids claiming relationship prediction. The confidence score means
-    context coverage: how much private, opt-in signal the simulated agents had.
-    """
 
+def _fallback_future_us(req: FutureUsRequest) -> FutureUsResponse:
     match = req.match
-    combined = f"{req.user_bio} {match.bio}"
-    active = _contains(combined, "gym", "track", "hike", "run", "clinic", "volunteer")
-    creative = _contains(combined, "art", "museum", "design", "ux", "sketch", "ceramic")
-    food = _contains(combined, "food", "ramen", "dumpling", "cook", "bake", "coffee", "latte", "soup")
-
+    graph = match.persona_graph or {}
+    maps = graph.get("google_maps", {}) if isinstance(graph, dict) else {}
+    food = graph.get("doordash", {}) if isinstance(graph, dict) else {}
     location = "North Quad Night Market"
-    if creative:
-        location = "Campus Gallery + 24-hour Latte Bar"
-    elif active:
-        location = "Riverside Walk Loop + Dumpling Cart"
-    elif food:
-        location = "Tiny Ramen Counter off University Ave"
-
-    connected_signals = [
-        ConnectedSignal(
-            source="ChatGPT Memory",
-            status="Opt-in persona graph",
-            confidence=91,
-            insight="Detected humor style, overthinking pattern, preferred date pressure, and growth goals from synthetic memory notes.",
-        ),
-        ConnectedSignal(
-            source="Google Maps",
-            status="Shared routine overlap",
-            confidence=84,
-            insight=f"Found a low-friction overlap near {location} without exposing exact private routes to the match.",
-        ),
-        ConnectedSignal(
-            source="Calendar",
-            status="Energy-window match",
-            confidence=78,
-            insight="Both agents look more socially available midweek after obligations, not late-night doom-scroll hours.",
-        ),
-        ConnectedSignal(
-            source="Spotify",
-            status="Vibe resonance",
-            confidence=73,
-            insight="The agents share a novelty-seeking music pattern: familiar comfort first, one weird recommendation after trust builds.",
-        ),
-        ConnectedSignal(
-            source="Food Orders",
-            status="Date constraint compiler",
-            confidence=86,
-            insight="The first plan avoids high-commitment dinner energy and uses snackable comfort food as a conversation pressure valve.",
-        ),
-        ConnectedSignal(
-            source="Messages Style",
-            status="Repair signal",
-            confidence=69,
-            insight="One agent jokes when nervous; the other responds well when intent is named directly instead of left ambiguous.",
-        ),
-    ]
-
-    chemistry_map = [
-        ChemistryDimension(
-            name="Rhythm Fit",
-            score=86,
-            signal="Midweek windows and similar reset rituals line up.",
-            opportunity="Suggest a bounded 70-minute first date so neither person feels trapped or rushed.",
-        ),
-        ChemistryDimension(
-            name="Emotional Safety",
-            score=79,
-            signal="Both agents prefer warmth plus competence over performative mystery.",
-            opportunity="Lead with a tiny specific compliment; avoid making the first interaction feel like an interview.",
-        ),
-        ChemistryDimension(
-            name="Novelty + Growth",
-            score=88 if creative or active else 82,
-            signal="There is enough difference to feel interesting without creating lifestyle whiplash.",
-            opportunity="Use a date that gives them something to react to together, not just face-to-face evaluation.",
-        ),
-        ChemistryDimension(
-            name="Conflict Repair",
-            score=74,
-            signal="A likely misread is delayed texting being interpreted as low interest.",
-            opportunity="Normalize direct repair: ‘I go quiet when overloaded, not when I stop caring.’",
-        ),
-        ChemistryDimension(
-            name="Intention Alignment",
-            score=81,
-            signal="Both appear curious about a real connection but allergic to forced seriousness too early.",
-            opportunity="Frame the first meet as a vibe test, then let momentum earn depth.",
-        ),
-        ChemistryDimension(
-            name="Practical Logistics",
-            score=84,
-            signal="Location, budget, and time constraints can be compiled into one doable plan.",
-            opportunity="Pick a place with an easy exit, a second-stop option, and no reservation stress.",
-        ),
-    ]
-
-    scenarios = [
-        FutureUsScenario(
-            title="Natural Overlap",
-            timeframe="Next Wednesday · 7:10 PM",
-            prompt="Where would your lives naturally cross without forcing it?",
-            simulation=f"The agents converged on {location}: public, playful, and close enough to both routines that saying yes feels easy.",
-            best_move="Send one specific invite with a built-in out: 70 minutes, snacks, then optional walk.",
-            watchout="Do not over-optimize the plan so much that it feels scripted.",
-        ),
-        FutureUsScenario(
-            title="First Misread",
-            timeframe="After the second message",
-            prompt="What tiny thing could create avoidable friction?",
-            simulation="A dry joke could read as distance if it lands before enough warmth is established.",
-            best_move="Pair the joke with one sincere sentence so the tone has an anchor.",
-            watchout="Mystery is less attractive here than clarity with style.",
-        ),
-        FutureUsScenario(
-            title="Repair Moment",
-            timeframe="Week two",
-            prompt="How would the pair recover from a small mismatch?",
-            simulation="The strongest repair path is quick acknowledgement, a little humor, and a concrete next plan.",
-            best_move="Say what happened, what you meant, and what you want to do next.",
-            watchout="Do not let a logistics issue become a character judgment.",
-        ),
-        FutureUsScenario(
-            title="Growth Arc",
-            timeframe="30 days in",
-            prompt="What could this connection unlock if it works?",
-            simulation="This pair nudges each other toward showing up: more follow-through, more novelty, less hiding behind perfect timing.",
-            best_move="Make one recurring micro-ritual: weekly new-place snack run or gallery lap.",
-            watchout="Keep it light enough to stay fun while being intentional enough to feel chosen.",
-        ),
-    ]
-
-    best_date = BestDatePlan(
-        title="Compiled First Date: The 70-Minute Signal Test",
-        location=location,
-        suggested_time="Next Wednesday · 7:10 PM",
-        plan=[
-            "Meet outside so the start feels casual, not interview-coded.",
-            "Grab one shareable snack or drink to create a tiny collaboration moment.",
-            "Walk for 12 minutes with one playful prompt: ‘What hill would your friends say you die on?’",
-            "End while energy is still rising; offer an optional second stop only if both lean in.",
-        ],
-        why_it_works="It uses relationship-specific signals — responsiveness, appreciation, rhythm, repair, and logistics — instead of pretending generic profile similarity can predict love.",
-        invite_text=f"Want to test our Future Us simulation? {location}, Wednesday at 7:10 — 70 minutes, one snack, zero interview energy.",
-    )
+    if isinstance(maps, dict) and maps.get("date_zone"):
+        location = str(maps["date_zone"])
+    elif isinstance(food, dict) and food.get("favorite_date_food"):
+        location = f"Campus walk + {food['favorite_date_food']} stop"
 
     return FutureUsResponse(
         title="Future Us",
         subtitle="Private agents simulated possible dynamics — not a prediction.",
         match_name=match.name,
-        couple_thesis=_persona_archetype(req.user_bio, match.bio),
+        couple_thesis="The Low-Pressure Chemistry Test",
         confidence=ContextConfidence(
-            score=82,
-            label="High context confidence",
-            explanation="Confidence means the agents had rich opt-in context. It is not a probability that the relationship succeeds.",
+            score=78 if graph else 54,
+            label="High context confidence" if graph else "Limited context confidence",
+            explanation="Confidence means opt-in context coverage, not the probability that a relationship succeeds.",
         ),
-        connected_signals=connected_signals,
-        chemistry_map=chemistry_map,
-        scenarios=scenarios,
-        best_date=best_date,
-        privacy_note="Private simulation. Not a prediction. Your connected signals stay yours and are never shown to the match without consent.",
-        research_note="Inspired by relationship science showing that relationship-specific experiences — responsiveness, appreciation, conflict, satisfaction, and commitment — matter more than generic trait matching.",
+        connected_signals=[
+            ConnectedSignal(source="ChatGPT Memory", status="Persona graph", confidence=86, insight="Uses remembered preferences, communication style, and emotional pacing from synthetic memory."),
+            ConnectedSignal(source="Google Maps", status="Routine overlap", confidence=82, insight=f"Compiles a realistic meeting zone around {location}."),
+            ConnectedSignal(source="DoorDash", status="Food comfort", confidence=80, insight="Turns repeat orders into a low-pressure snack anchor."),
+            ConnectedSignal(source="Spotify", status="Vibe resonance", confidence=72, insight="Uses listening mood to avoid a first date that feels off-tempo."),
+            ConnectedSignal(source="Calendar", status="Energy window", confidence=76, insight="Chooses a time that fits routines instead of forcing peak-social performance."),
+        ],
+        chemistry_map=[
+            ChemistryDimension(name="Rhythm Fit", score=82, signal="Their routines can support a bounded midweek meet.", opportunity="Keep date one under 90 minutes."),
+            ChemistryDimension(name="Emotional Safety", score=79, signal="Both respond best to clear intent with playful delivery.", opportunity="Use one sincere line before the joke."),
+            ChemistryDimension(name="Novelty + Growth", score=81, signal="The pair has enough difference to feel expansive.", opportunity="Add a tiny optional second stop."),
+            ChemistryDimension(name="Conflict Repair", score=74, signal="A likely misread is busyness being read as low interest.", opportunity="Normalize quick repair language."),
+            ChemistryDimension(name="Intention Alignment", score=80, signal="Both can try something real without heavy labels.", opportunity="Call it a vibe test, not a destiny test."),
+            ChemistryDimension(name="Practical Logistics", score=85, signal="The date can be compiled from location, time, and food constraints.", opportunity="Choose one easy meeting zone."),
+        ],
+        scenarios=[
+            FutureUsScenario(title="Natural Overlap", timeframe="Next Wednesday · 7:10 PM", prompt="Where do routines cross?", simulation=f"The private agents converge around {location}, a public spot with an easy exit and optional second stop.", best_move="Send one specific bounded invite.", watchout="Do not make the plan feel over-engineered."),
+            FutureUsScenario(title="First Misread", timeframe="After message two", prompt="What could go sideways?", simulation="Delayed replies could be misread as low interest if nobody names their rhythm.", best_move="Pair humor with one clear sentence of intent.", watchout="Avoid testing interest with silence."),
+            FutureUsScenario(title="Repair Moment", timeframe="Week two", prompt="How do they recover?", simulation="A small acknowledgement plus a concrete next plan restores momentum.", best_move="Say what happened, what you meant, and what you want next.", watchout="Do not turn logistics into a character judgment."),
+            FutureUsScenario(title="Growth Arc", timeframe="30 days", prompt="What could improve?", simulation="The connection nudges both people toward more direct asks and better follow-through.", best_move="Create one repeatable low-pressure ritual.", watchout="Keep novelty fun, not performative."),
+        ],
+        best_date=BestDatePlan(
+            title="Compiled First Date: The 70-Minute Signal Test",
+            location=location,
+            suggested_time="Next Wednesday · 7:10 PM",
+            plan=["Meet outside the venue", "Grab one shareable snack or drink", "Walk for twelve minutes", "End while the energy is still rising"],
+            why_it_works="It combines responsiveness, appreciation, rhythm, repair, and logistics instead of pretending profile similarity predicts love.",
+            invite_text=f"Want to test Future Us? {location}, Wednesday 7:10 — one snack, short walk, zero interview energy.",
+        ),
+        privacy_note="Private simulation. Not a prediction. Connected signals stay private unless shared with consent.",
+        research_note="Uses relationship-specific signals like responsiveness, appreciation, conflict repair, commitment, and logistics.",
     )
+
+
+async def build_future_us_simulation(req: FutureUsRequest) -> FutureUsResponse:
+    llm = _future_us_llm()
+    if not llm:
+        return _fallback_future_us(req)
+
+    api_key, base_url, model = llm
+    user_payload = {
+        "user": {
+            "bio": req.user_bio,
+            "demo_persona_graph": {
+                "chatgpt_memory": [
+                    "Cares about building impressive software and tends to overthink whether the other person is genuinely interested.",
+                    "Likes concrete plans, gym consistency, ramen/late-night food, and people who communicate directly.",
+                ],
+                "google_maps": {"frequent_places": ["CS building", "campus gym", "late-night ramen row"], "date_zone": "North Quad / ramen row"},
+                "doordash": {"repeat_orders": ["tonkotsu ramen", "mango lassi", "protein bowls"], "favorite_date_food": "ramen"},
+                "spotify": {"top_moods": ["focus beats", "Bollywood nostalgia", "main-character night walks"]},
+                "calendar": {"free_windows": ["Wednesday 7 PM", "Friday after 8 PM"], "energy_notes": "Best after gym or after a build session ships."},
+                "message_style": {"pattern": "fast when excited, analytical when nervous", "repair_hint": "responds well to direct reassurance"},
+            },
+        },
+        "match": req.match.model_dump(),
+    }
+
+    try:
+        async with httpx.AsyncClient(timeout=45.0) as client:
+            r = await client.post(
+                f"{base_url.rstrip('/')}/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "http://localhost:5173",
+                    "X-Title": "Ditto Future Us Demo",
+                },
+                json={
+                    "model": model,
+                    "temperature": 0.72,
+                    "messages": [
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": json.dumps(user_payload, ensure_ascii=False)},
+                    ],
+                },
+            )
+            r.raise_for_status()
+            data = r.json()
+            raw = data["choices"][0]["message"]["content"]
+    except (httpx.HTTPError, KeyError, TypeError, ValueError):
+        return _fallback_future_us(req)
+
+    try:
+        parsed = _extract_json_object(raw)
+        out = FutureUsResponse.model_validate(parsed)
+    except (json.JSONDecodeError, ValidationError, KeyError, TypeError, ValueError):
+        return _fallback_future_us(req)
+
+    return out

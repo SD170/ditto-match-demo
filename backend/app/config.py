@@ -14,6 +14,12 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o-mini"
     cors_origins: str = "http://localhost:5173,http://localhost:3000"
 
+    # OpenRouter is useful for cheap/free demo calls. Free model IDs change over time;
+    # override OPENROUTER_MODEL in .env if needed.
+    openrouter_api_key: str | None = None
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
+    openrouter_model: str = "openai/gpt-oss-20b:free"
+
     # Lexical RAG (BM25): max profiles passed to the LLM after retrieval
     rag_top_k: int = 12
 

@@ -117,4 +117,4 @@ async def match(req: MatchRequest) -> MatchResponse:
 
 @app.post("/api/future-us/simulate", response_model=FutureUsResponse)
 async def simulate_future_us(req: FutureUsRequest) -> FutureUsResponse:
-    return build_future_us_simulation(req)
+    return await build_future_us_simulation(req)
