@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ditto AI - Future Us Scenario Simulator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#e5e1e4",
+                      "primary-fixed": "#ffd9e0",
+                      "on-secondary-fixed": "#002022",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#1c1b1d",
+                      "tertiary": "#c8c5cb",
+                      "surface-tint": "#ffb1c3",
+                      "tertiary-container": "#919095",
+                      "outline-variant": "#5c3f45",
+                      "on-tertiary-container": "#29292d",
+                      "surface-container-highest": "#353437",
+                      "surface-container-high": "#2a2a2c",
+                      "on-tertiary-fixed": "#1b1b1f",
+                      "on-tertiary": "#303034",
+                      "on-primary-fixed": "#3f0019",
+                      "surface-container": "#201f21",
+                      "on-background": "#e5e1e4",
+                      "on-primary-container": "#590026",
+                      "outline": "#ac878f",
+                      "tertiary-fixed-dim": "#c8c5cb",
+                      "primary-container": "#ff4b89",
+                      "inverse-surface": "#e5e1e4",
+                      "surface-container-lowest": "#0e0e10",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "primary": "#ffb1c3",
+                      "tertiary-fixed": "#e4e1e7",
+                      "secondary-fixed": "#7df4ff",
+                      "on-tertiary-fixed-variant": "#47464b",
+                      "on-surface-variant": "#e5bcc4",
+                      "on-error": "#690005",
+                      "on-secondary": "#00363a",
+                      "on-primary-fixed-variant": "#8f0041",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "inverse-on-surface": "#313032",
+                      "surface-dim": "#131315",
+                      "surface-bright": "#39393b",
+                      "secondary-container": "#00eefc",
+                      "error": "#ffb4ab",
+                      "surface-variant": "#353437",
+                      "primary-fixed-dim": "#ffb1c3",
+                      "on-primary": "#66002c",
+                      "secondary": "#d3fbff",
+                      "surface": "#131315",
+                      "background": "#131315",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-container": "#00686f",
+                      "inverse-primary": "#bb0058"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding": "40px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "panel-gap": "32px"
+              },
+              "fontFamily": {
+                      "body-base": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "Space Grotesk"
+                      ],
+                      "data-point": [
+                              "Space Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "data-point": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "-0.03em",
+                                      "fontWeight": "300"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background-color: rgba(26, 26, 30, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-active {
+            box-shadow: 0 0 15px rgba(255, 0, 122, 0.3);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 122, 0.3);
+        }
+        .glow-text-cyan {
+            text-shadow: 0 0 8px rgba(0, 238, 252, 0.5);
+        }
+        .grid-bg {
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body-base text-body-base overflow-x-hidden min-h-screen grid-bg relative">
+<!-- TopNavBar -->
+<nav class="bg-zinc-900/60 backdrop-blur-[20px] docked full-width top-0 z-50 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] flex justify-between items-center w-full px-10 h-20 fixed">
+<div class="flex items-center space-x-6">
+<span class="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] to-cyan-400">DITTO AI</span>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:text-cyan-400 transition-all duration-300 active:scale-95 duration-150 text-zinc-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button class="hover:text-cyan-400 transition-all duration-300 active:scale-95 duration-150 text-zinc-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-white/10 glow-hover cursor-pointer ml-4">
+<img alt="User Bio-Metric Profile" class="w-full h-full object-cover" data-alt="A cinematic, high-fidelity close-up portrait of a woman's face, lit by soft, glowing holographic screens in a futuristic command center. The lighting is deep and atmospheric, featuring striking magenta and cyan neon hues reflecting on her features. The aesthetic is dark mode, sophisticated, and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuWKjEJKc8uFtyisQCvP1VLu6x3QCY60w0be9kHbe3T-nYQ3051raUvUne53J-OeieUGQDjA7TLxMugDfUaGgRyuddxQfkDdIkMAR9wCLBbRt9mLMORXrw7xnQ_S_zvurZWIL184U3Ch0NLj0h8iiM2YdZHib1XVCkkLII6RkviPuESXBewNTjnA0byRIUF_q--6vA8ETsI56gBUFfhhpjo-qz1zD6uNyDXZFJzol1urcBEorJS99zfJA8zEQmOqX9df7umvxST2Q"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="bg-[#1A1A1E]/60 backdrop-blur-[20px] fixed left-0 top-20 h-[calc(100vh-80px)] w-72 shadow-[4px_0_24px_rgba(0,0,0,0.2)] flex flex-col pt-8 space-y-2 z-40">
+<div class="px-6 mb-8">
+<h2 class="text-xs font-bold tracking-widest text-[#FF007A] uppercase">MISSION CONTROL</h2>
+<p class="text-zinc-500 text-xs mt-1">Protocol: Heart-Sync</p>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center space-x-4 px-6 py-4 text-zinc-500 opacity-70 hover:bg-white/5 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Manrope'] font-medium text-sm">Heart Map</span>
+</a>
+<a class="flex items-center space-x-4 px-6 py-4 border-l-2 border-[#FF007A] bg-gradient-to-r from-[#FF007A]/10 to-transparent text-[#FF007A] shadow-[0_0_15px_rgba(255,0,122,0.2)] group-hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-['Manrope'] font-medium text-sm">Scenario Engine</span>
+</a>
+<a class="flex items-center space-x-4 px-6 py-4 text-zinc-500 opacity-70 hover:bg-white/5 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">biotech</span>
+<span class="font-['Manrope'] font-medium text-sm">Compatibility Lab</span>
+</a>
+<a class="flex items-center space-x-4 px-6 py-4 text-zinc-500 opacity-70 hover:bg-white/5 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">timeline</span>
+<span class="font-['Manrope'] font-medium text-sm">Pulse History</span>
+</a>
+<a class="flex items-center space-x-4 px-6 py-4 text-zinc-500 opacity-70 hover:bg-white/5 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] font-medium text-sm">System Config</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pl-72 pt-20 min-h-screen p-container-padding flex flex-col gap-panel-gap">
+<!-- Header Section -->
+<header class="flex flex-col gap-4">
+<h1 class="font-display-lg text-display-lg text-white">Scenario Simulator</h1>
+<p class="font-headline-md text-headline-md text-tertiary-fixed-dim max-w-3xl">Not a prediction. A map of where this connection could spark, stall, or grow.</p>
+</header>
+<!-- Scenario Tab Bar -->
+<div class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide border-b border-white/5">
+<button class="px-6 py-3 rounded-full bg-primary-container/20 text-primary-fixed border border-primary-container glow-active font-label-caps text-label-caps whitespace-nowrap">
+                Natural Overlap
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                First Date
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                Ordinary Tuesday
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                First Misread
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                Repair Moment
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                Friends Test
+            </button>
+<button class="px-6 py-3 rounded-full glass-panel text-tertiary-fixed border border-white/5 hover:border-secondary-fixed/50 hover:text-secondary-fixed transition-all font-label-caps text-label-caps whitespace-nowrap">
+                Growth Arc
+            </button>
+</div>
+<!-- Main Layout Grid -->
+<div class="grid grid-cols-12 gap-gutter flex-1">
+<!-- Left Panel: Active Scenario View -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-gutter">
+<div class="glass-panel rounded-xl p-8 relative overflow-hidden h-full flex flex-col">
+<!-- Abstract Background Map/Lines Hint -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background: radial-gradient(circle at 70% 30%, rgba(0, 238, 252, 0.15) 0%, transparent 50%);">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M10,50 Q30,20 50,50 T90,50" fill="none" stroke="#7df4ff" stroke-dasharray="2,2" stroke-width="0.5"></path>
+<circle cx="10" cy="50" fill="#ff4b89" r="1.5"></circle>
+<circle cx="90" cy="50" fill="#00eefc" r="1.5"></circle>
+</svg>
+</div>
+<div class="relative z-10 flex-1">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-3 h-3 rounded-full bg-secondary-container glow-text-cyan shadow-[0_0_8px_rgba(0,238,252,0.8)]"></span>
+<h2 class="font-headline-md text-headline-md text-white">You already live near each other’s orbit.</h2>
+</div>
+<p class="font-body-base text-body-base text-tertiary-fixed mb-8 leading-relaxed max-w-2xl">
+                            Both of you cross North Quad between 7:00–8:00 PM on Wednesdays. Ditto should not manufacture a dramatic meet-cute; it should convert a real overlap into an intentional, low-pressure first date.
+                        </p>
+<div class="flex flex-wrap gap-3 mb-10">
+<div class="glass-panel px-4 py-2 rounded-lg flex items-center gap-2 border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">map</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed">Maps overlap</span>
+</div>
+<div class="glass-panel px-4 py-2 rounded-lg flex items-center gap-2 border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">calendar_month</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed">Calendar window</span>
+</div>
+<div class="glass-panel px-4 py-2 rounded-lg flex items-center gap-2 border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">nights_stay</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed">Evening energy</span>
+</div>
+<div class="glass-panel px-4 py-2 rounded-lg flex items-center gap-2 border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">local_cafe</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed">Coffee preference</span>
+</div>
+</div>
+<!-- Best Move Card -->
+<div class="mt-auto bg-gradient-to-br from-primary-container/20 to-surface-container-low border border-primary-container/50 rounded-xl p-6 relative overflow-hidden glow-active">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+<div class="flex items-start gap-4 relative z-10">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#FF007A] to-cyan-400 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,0,122,0.4)]">
+<span class="material-symbols-outlined text-white">assistant_navigation</span>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-primary-fixed mb-2 tracking-widest">BEST MOVE</h3>
+<p class="font-headline-md text-headline-md text-white">
+                                        Meet at Prism Coffee Atrium at 7:15 PM, then walk toward the Art Library.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Side Panel -->
+<div class="col-span-12 lg:col-span-4">
+<div class="glass-panel rounded-xl p-8 h-full flex flex-col gap-6">
+<div class="flex items-center gap-2 pb-4 border-b border-white/5">
+<span class="material-symbols-outlined text-secondary-fixed">insights</span>
+<h3 class="font-label-caps text-label-caps text-tertiary-fixed tracking-widest">WHY THIS MATTERS</h3>
+</div>
+<ul class="space-y-6 flex-1">
+<li class="flex items-start gap-4 group">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-2 group-hover:shadow-[0_0_8px_rgba(0,238,252,0.8)] transition-all"></span>
+<p class="font-body-base text-body-base text-on-surface">Rhythm fit reduces planning friction.</p>
+</li>
+<li class="flex items-start gap-4 group">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-2 group-hover:shadow-[0_0_8px_rgba(0,238,252,0.8)] transition-all"></span>
+<p class="font-body-base text-body-base text-on-surface">Low-pressure settings help both personas open up.</p>
+</li>
+<li class="flex items-start gap-4 group">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-2 group-hover:shadow-[0_0_8px_rgba(0,238,252,0.8)] transition-all"></span>
+<p class="font-body-base text-body-base text-on-surface">Relationship-specific signals matter more than static traits.</p>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Section: Future Scenarios Row -->
+<div class="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-gutter mt-4">
+<div class="glass-panel rounded-xl p-6 border-t-2 border-t-outline-variant hover:border-t-primary-container transition-all cursor-pointer group">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-label-caps text-label-caps text-tertiary-fixed group-hover:text-primary-fixed transition-colors">First Misread</h4>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary-container transition-colors text-sm">warning</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant line-clamp-3">
+                        Slow replies during deadline week may look like low interest.
+                    </p>
+</div>
+<div class="glass-panel rounded-xl p-6 border-t-2 border-t-outline-variant hover:border-t-secondary-container transition-all cursor-pointer group">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-label-caps text-label-caps text-tertiary-fixed group-hover:text-secondary-fixed transition-colors">Repair Moment</h4>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary-container transition-colors text-sm">handshake</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant line-clamp-3">
+                        Direct reassurance beats more texting.
+                    </p>
+</div>
+<div class="glass-panel rounded-xl p-6 border-t-2 border-t-outline-variant hover:border-t-secondary-container transition-all cursor-pointer group">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-label-caps text-label-caps text-tertiary-fixed group-hover:text-secondary-fixed transition-colors">Growth Arc</h4>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary-container transition-colors text-sm">trending_up</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant line-clamp-3">
+                        She adds spontaneity; he adds consistency.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+</body></html>

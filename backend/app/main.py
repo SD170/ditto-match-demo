@@ -8,8 +8,9 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.schemas import MatchRequest, MatchResponse, Person
+from app.schemas import FutureUsRequest, FutureUsResponse, MatchRequest, MatchResponse, Person
 from app.data import load_men, load_women
+from app.services.future_us import build_future_us_simulation
 from app.services.matcher import (
     LLM_UPSTREAM_USER_MESSAGE,
     LlmRateLimitedError,
@@ -112,3 +113,8 @@ async def match(req: MatchRequest) -> MatchResponse:
         raise HTTPException(502, LLM_UPSTREAM_USER_MESSAGE)
     except Exception as e:
         raise HTTPException(500, str(e)) from e
+
+
+@app.post("/api/future-us/simulate", response_model=FutureUsResponse)
+async def simulate_future_us(req: FutureUsRequest) -> FutureUsResponse:
+    return build_future_us_simulation(req)

@@ -71,9 +71,9 @@ export function MatchesPage() {
   const [matchBusy, setMatchBusy] = useState(false)
   const [matchErr, setMatchErr] = useState<string | null>(null)
   const [celebrateMatch, setCelebrateMatch] = useState<{
-    name: string
-    image: string
+    match: Person
     reason: string
+    userBio: string
   } | null>(null)
   const [vibeHelpOpen, setVibeHelpOpen] = useState(false)
   const vibeHelpRef = useRef<HTMLDivElement | null>(null)
@@ -152,9 +152,9 @@ export function MatchesPage() {
         ageMax,
       })
       setCelebrateMatch({
-        name: out.match.name,
-        image: out.match.image,
+        match: out.match,
         reason: out.reason,
+        userBio: trimmed,
       })
     } catch (e) {
       setMatchErr(e instanceof Error ? e.message : 'Match request failed')
@@ -252,9 +252,9 @@ export function MatchesPage() {
 
       {celebrateMatch && (
         <MatchCelebrationModal
-          matchName={celebrateMatch.name}
-          matchImage={celebrateMatch.image}
+          match={celebrateMatch.match}
           reason={celebrateMatch.reason}
+          userBio={celebrateMatch.userBio}
           onClose={() => setCelebrateMatch(null)}
         />
       )}

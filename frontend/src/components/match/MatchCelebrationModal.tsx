@@ -1,49 +1,12 @@
-import { useCallback, useEffect, type CSSProperties, type ReactNode } from 'react'
+import { useCallback, useEffect, useState, type CSSProperties } from 'react'
 import Lottie from 'lottie-react'
 import { useNavigate } from 'react-router-dom'
 
+import { postFutureUsSimulation } from '../../api/futureUs'
 import confettiAnimation from '../../assets/lottie/confetti.json'
+import type { FutureUsResponse, Person } from '../../types/person'
+import { FutureUsExperience } from './FutureUsExperience'
 
-/** Loud crying + folded hands — use escapes so the file stays UTF-8-safe in all toolchains */
-const cry = '\u{1F62D}'
-const pray = '\u{1F64F}'
-
-function DoodleArrow({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 48 48" fill="none" aria-hidden>
-      <path
-        d="M6 24h22m-6-8l8 8-8 8"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function ArrowWrap({
-  children,
-  className,
-  rotation = 0,
-  delayClass = '',
-}: {
-  children: ReactNode
-  className?: string
-  rotation?: number
-  delayClass?: string
-}) {
-  return (
-    <div
-      className={`absolute ${className ?? ''}`}
-      style={rotation !== 0 ? { transform: `rotate(${rotation}deg)` } : undefined}
-    >
-      <div className={`plot-arrow-bob ${delayClass}`}>{children}</div>
-    </div>
-  )
-}
-
-/** Graffiti + Lottie in a vertical rail so the main card stays clean and CTA-first */
 function GraffitiRail({ side }: { side: 'left' | 'right' }) {
   const outerBlur: CSSProperties = side === 'left' ? { left: '-2.5rem' } : { right: '-2.5rem' }
   const innerBlur: CSSProperties = side === 'left' ? { right: '-1rem' } : { left: '-1rem' }
@@ -82,17 +45,33 @@ function GraffitiRail({ side }: { side: 'left' | 'right' }) {
 
 type MatchCelebrationModalProps = {
   onClose: () => void
-  matchName: string
-  matchImage: string
+  match: Person
   reason: string
+  userBio: string
 }
 
-export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }: MatchCelebrationModalProps) {
+export function MatchCelebrationModal({ onClose, match, reason, userBio }: MatchCelebrationModalProps) {
   const navigate = useNavigate()
+  const [futureUs, setFutureUs] = useState<FutureUsResponse | null>(null)
+  const [futureUsBusy, setFutureUsBusy] = useState(false)
+  const [futureUsError, setFutureUsError] = useState<string | null>(null)
   const closeToAbout = useCallback(() => {
     onClose()
     navigate('/about')
   }, [navigate, onClose])
+
+  async function runFutureUs() {
+    setFutureUsError(null)
+    setFutureUsBusy(true)
+    try {
+      const simulation = await postFutureUsSimulation({ userBio, match })
+      setFutureUs(simulation)
+    } catch (e) {
+      setFutureUsError(e instanceof Error ? e.message : 'Future Us simulation failed')
+    } finally {
+      setFutureUsBusy(false)
+    }
+  }
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -110,11 +89,11 @@ export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }
       aria-labelledby="celebration-title"
       onClick={closeToAbout}
     >
-      <div className="relative z-10 flex max-h-[90vh] w-full max-w-4xl items-stretch justify-center gap-1 sm:gap-2">
+      <div className={`relative z-10 flex max-h-[90vh] w-full items-stretch justify-center gap-1 sm:gap-2 ${futureUs ? 'max-w-6xl' : 'max-w-4xl'}`}>
         <GraffitiRail side="left" />
 
         <div
-          className="relative flex min-h-0 min-w-0 max-w-lg flex-1 flex-col overflow-hidden rounded-[1.75rem] border-2 border-primary/50 bg-zinc-950/95 shadow-[0_0_60px_rgba(247,72,177,0.35)] md:max-w-md md:rounded-[2rem]"
+          className={`relative flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden rounded-[1.75rem] border-2 border-primary/50 bg-zinc-950/95 shadow-[0_0_60px_rgba(247,72,177,0.35)] md:rounded-[2rem] ${futureUs ? 'max-w-5xl' : 'max-w-lg md:max-w-md'}`}
           onClick={(e) => e.stopPropagation()}
           style={{
             boxShadow:
@@ -131,117 +110,86 @@ export function MatchCelebrationModal({ onClose, matchName, matchImage, reason }
           </button>
           <div className="pointer-events-none absolute -inset-px -z-10 rounded-[inherit] bg-gradient-to-br from-primary/25 via-transparent to-cyan-500/15 opacity-80 blur-sm" />
 
-          <div className="shrink-0 px-5 pb-3 pt-5 md:px-7 md:pt-6">
-            <p className="mb-1 text-center font-label text-[9px] font-black uppercase tracking-[0.45em] text-primary/80">
-              Congratulations
-            </p>
-            <h2
-              id="celebration-title"
-              className="text-center font-headline text-3xl font-black uppercase leading-none tracking-tight text-white md:text-4xl"
-              style={{ textShadow: '2px 2px 0 rgba(247,72,177,0.35), -1px -1px 0 rgba(34,211,238,0.2)' }}
-            >
-              It&apos;s a match
-            </h2>
-            <p className="mt-2 text-center text-sm text-zinc-400 md:text-base">
-              <span className="font-medium text-white">{matchName}</span>
-            </p>
-
-            <div className="relative mt-5 w-full">
-              <p
-                className="pointer-events-none mb-2 flex flex-wrap items-center justify-center gap-x-1.5 text-center font-headline text-[9px] font-black uppercase tracking-[0.22em] text-cyan-300/90"
-                aria-hidden
-              >
-                <span className="plot-arrow-bob text-lg leading-none">{cry}</span>
-                <span className="plot-arrow-bob text-base text-primary">&#8595;</span>
-                <span>Click this</span>
-                <span className="plot-arrow-bob plot-arrow-delay-1 text-base text-primary">&#8595;</span>
-                <span className="plot-arrow-bob plot-arrow-delay-2 text-lg leading-none">{pray}</span>
-              </p>
-
-              <div className="pointer-events-none absolute inset-0 overflow-visible" aria-hidden>
-                <ArrowWrap className="-left-2 top-[20%]" rotation={8} delayClass="plot-arrow-delay-1">
-                  <DoodleArrow className="h-8 w-8 text-primary/90" />
-                </ArrowWrap>
-                <ArrowWrap className="-right-2 top-[22%]" rotation={176} delayClass="plot-arrow-delay-2">
-                  <DoodleArrow className="h-8 w-8 text-cyan-300/80" />
-                </ArrowWrap>
-                <span className="plot-arrow-bob plot-arrow-delay-2 absolute -bottom-1 left-1/2 -translate-x-1/2 text-lg text-primary">
-                  &#8593;
-                </span>
-                <span className="plot-arrow-bob absolute -left-3 top-[58%] text-xl sm:-left-6 sm:text-2xl">{cry}</span>
-                <span className="plot-arrow-bob plot-arrow-delay-1 absolute -right-3 top-[52%] text-xl sm:-right-6 sm:text-2xl">
-                  {pray}
-                </span>
-                <span className="plot-arrow-bob plot-arrow-delay-2 absolute bottom-0 left-[12%] text-lg sm:bottom-1 sm:text-xl">
-                  {cry}
-                </span>
-                <span className="plot-arrow-bob absolute bottom-1 right-[14%] text-base sm:text-lg">{pray}</span>
-              </div>
-
-              <button
-                type="button"
-                onClick={closeToAbout}
-                className="group relative z-10 w-full rounded-2xl border-2 border-dashed border-primary/60 bg-gradient-to-r from-primary/15 via-white/5 to-cyan-400/10 px-5 py-4 text-left ring-2 ring-transparent transition-all hover:border-primary hover:from-primary/25 hover:shadow-[0_0_28px_rgba(247,72,177,0.22)] hover:ring-primary/20 md:px-6 md:py-5"
-              >
-                <span className="pointer-events-none absolute -right-0.5 -top-2 z-20 font-headline text-2xl font-black text-primary plot-arrow-bob">
-                  &#11166;
-                </span>
-                <span className="pointer-events-none absolute -bottom-1.5 -left-0.5 z-20 text-xl text-cyan-300 plot-arrow-bob plot-arrow-delay-2">
-                  &#11164;
-                </span>
-                <span className="pointer-events-none absolute right-4 top-1/2 z-20 -translate-y-1/2 text-xl text-primary/80 plot-arrow-bob plot-arrow-delay-1">
-                  &#8592;
-                </span>
-                <span className="pointer-events-none absolute left-3 top-2 z-20 text-lg plot-arrow-bob sm:left-4 sm:text-xl">
-                  {cry}
-                </span>
-                <span className="pointer-events-none absolute right-10 top-3 z-20 text-base plot-arrow-bob plot-arrow-delay-1 sm:right-12 sm:text-lg">
-                  {pray}
-                </span>
-
-                <span className="block font-label text-[9px] font-black uppercase tracking-[0.35em] text-primary">
-                  Plot twist{' '}
-                  <span className="plot-arrow-bob align-middle text-sm normal-case">{cry}</span>
-                  <span className="plot-arrow-bob plot-arrow-delay-1 align-middle text-sm normal-case">{pray}</span>
-                </span>
-                <span className="mt-1 block font-headline text-sm font-black leading-snug tracking-tight text-white md:text-base">
-                  {pray} please — the human who soldered this whole fever dream together?{' '}
-                  <span className="italic text-cyan-300 underline decoration-wavy decoration-primary/80 underline-offset-4 group-hover:text-white">
-                    Peep the build notes &rarr;
-                  </span>
-                </span>
-              </button>
-            </div>
-          </div>
-
-          <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-5 pt-1 md:px-7">
-            <div className="mx-auto flex max-w-xs flex-col items-center gap-3 md:max-w-sm">
-              <div
-                className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl border-2 border-white/15 ring-1 ring-primary/25 md:h-32 md:w-32"
-                style={{
-                  boxShadow:
-                    '0 12px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(247,72,177,0.25), inset 0 1px 0 rgba(255,255,255,0.1)',
-                }}
-              >
-                <img
-                  src={matchImage}
-                  alt=""
-                  className="h-full w-full object-cover"
-                  decoding="async"
-                  fetchPriority="high"
-                />
-                <span className="pointer-events-none absolute -right-0.5 -top-0.5 rounded-md bg-cyan-400/95 px-1.5 py-0.5 font-label text-[8px] font-black uppercase tracking-widest text-black">
-                  Locked in
-                </span>
-              </div>
-              <div className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-left">
-                <p className="mb-1.5 font-label text-[8px] font-black uppercase tracking-[0.35em] text-primary/90">
-                  The model&apos;s verdict
+          {futureUs ? (
+            <FutureUsExperience simulation={futureUs} onBack={() => setFutureUs(null)} />
+          ) : (
+            <>
+              <div className="shrink-0 px-5 pb-3 pt-5 md:px-7 md:pt-6">
+                <p className="mb-1 text-center font-label text-[9px] font-black uppercase tracking-[0.45em] text-primary/80">
+                  Congratulations
                 </p>
-                <p className="text-xs leading-relaxed text-zinc-300 md:text-sm">{reason}</p>
+                <h2
+                  id="celebration-title"
+                  className="text-center font-headline text-3xl font-black uppercase leading-none tracking-tight text-white md:text-4xl"
+                  style={{ textShadow: '2px 2px 0 rgba(247,72,177,0.35), -1px -1px 0 rgba(34,211,238,0.2)' }}
+                >
+                  It&apos;s a match
+                </h2>
+                <p className="mt-2 text-center text-sm text-zinc-400 md:text-base">
+                  <span className="font-medium text-white">{match.name}</span>
+                </p>
+
+                <div className="mt-5 rounded-[1.5rem] border border-primary/35 bg-gradient-to-br from-primary/20 via-white/[0.04] to-cyan-400/10 p-4 text-left shadow-[0_0_32px_rgba(247,72,177,0.16)]">
+                  <div className="mb-3 flex items-center justify-between gap-3">
+                    <div>
+                      <p className="font-label text-[9px] font-black uppercase tracking-[0.32em] text-cyan-200">Future Us</p>
+                      <h3 className="mt-1 font-headline text-2xl font-black uppercase leading-none text-white">Run the private chemistry simulation</h3>
+                    </div>
+                    <span className="rounded-full border border-white/10 bg-black/40 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-primary">82% context</span>
+                  </div>
+                  <p className="text-xs leading-relaxed text-zinc-300">
+                    Let private agents simulate possible dynamics, scenario friction, repair moves, and one compiled first date. Not a prediction — just the conditions that make this match worth testing.
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-300">
+                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">ChatGPT Memory</span>
+                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Maps + Calendar</span>
+                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Spotify vibe</span>
+                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Food graph</span>
+                  </div>
+                  {futureUsError ? (
+                    <p className="mt-3 rounded-xl border border-red-400/30 bg-red-500/10 p-3 text-xs leading-relaxed text-red-100">{futureUsError}</p>
+                  ) : null}
+                  <button
+                    type="button"
+                    onClick={() => void runFutureUs()}
+                    disabled={futureUsBusy}
+                    className="mt-4 w-full rounded-2xl bg-primary px-5 py-3 text-xs font-black uppercase tracking-[0.24em] text-white shadow-lg shadow-primary/25 transition-colors hover:bg-[#ff69c1] disabled:cursor-wait disabled:opacity-60"
+                  >
+                    {futureUsBusy ? 'Simulating Future Us…' : 'Preview Future Us'}
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
+
+              <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-5 pt-1 md:px-7">
+                <div className="mx-auto flex max-w-xs flex-col items-center gap-3 md:max-w-sm">
+                  <div
+                    className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl border-2 border-white/15 ring-1 ring-primary/25 md:h-32 md:w-32"
+                    style={{
+                      boxShadow:
+                        '0 12px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(247,72,177,0.25), inset 0 1px 0 rgba(255,255,255,0.1)',
+                    }}
+                  >
+                    <img
+                      src={match.image}
+                      alt=""
+                      className="h-full w-full object-cover"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
+                    <span className="pointer-events-none absolute -right-0.5 -top-0.5 rounded-md bg-cyan-400/95 px-1.5 py-0.5 font-label text-[8px] font-black uppercase tracking-widest text-black">
+                      Locked in
+                    </span>
+                  </div>
+                  <div className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-left">
+                    <p className="mb-1.5 font-label text-[8px] font-black uppercase tracking-[0.35em] text-primary/90">
+                      The model&apos;s verdict
+                    </p>
+                    <p className="text-xs leading-relaxed text-zinc-300 md:text-sm">{reason}</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
         </div>
 
         <GraffitiRail side="right" />

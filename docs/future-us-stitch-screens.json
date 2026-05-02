@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "future-us-entry-modal",
+    "title": "Future Us Entry Modal",
+    "screen_name": "projects/9138456706527534014/screens/32cfd062b0e94ba0a0d3ed0b8fc1b143",
+    "width": "2560",
+    "height": "2048",
+    "png": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-entry-modal.png",
+    "html": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-entry-modal.html"
+  },
+  {
+    "slug": "future-us-simulation-dashboard",
+    "title": "Future Us Simulation Dashboard",
+    "screen_name": "projects/9138456706527534014/screens/49203afc3dc1479e870df438e858cf59",
+    "width": "2560",
+    "height": "2048",
+    "png": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-simulation-dashboard.png",
+    "html": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-simulation-dashboard.html"
+  },
+  {
+    "slug": "future-us-scenario-simulator",
+    "title": "Future Us Scenario Simulator",
+    "screen_name": "projects/9138456706527534014/screens/85d757fca8264fc1a5a7ad8b6a0ade85",
+    "width": "2560",
+    "height": "2080",
+    "png": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-scenario-simulator.png",
+    "html": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-scenario-simulator.html"
+  },
+  {
+    "slug": "future-us-best-date-compiler",
+    "title": "Best Date Compiler: Your Compiled Plan",
+    "screen_name": "projects/9138456706527534014/screens/27430257eb534a2caa63b02a88a4eeed",
+    "width": "2560",
+    "height": "2804",
+    "png": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-best-date-compiler.png",
+    "html": "/Users/sd17/Desktop/south park/portfolio/ditto-ai/docs/design-assets/future-us-best-date-compiler.html"
+  }
+]

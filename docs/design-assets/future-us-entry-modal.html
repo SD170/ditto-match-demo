@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ditto AI - Future Us Entry Modal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-surface": "#001e2c",
+                            "primary-fixed": "#ffd8e8",
+                            "background": "#f5faff",
+                            "primary-fixed-dim": "#ffafd5",
+                            "surface-container": "#dcf1ff",
+                            "primary": "#b00079",
+                            "inverse-surface": "#183342",
+                            "tertiary": "#5644d0",
+                            "surface": "#f5faff",
+                            "secondary-container": "#cae7f9",
+                            "on-secondary-container": "#4d6877",
+                            "surface-container-high": "#d0ecff",
+                            "on-primary-fixed-variant": "#8a005e",
+                            "inverse-primary": "#ffafd5",
+                            "surface-bright": "#f5faff",
+                            "on-tertiary": "#ffffff",
+                            "surface-container-lowest": "#ffffff",
+                            "surface-container-low": "#e9f5ff",
+                            "on-surface-variant": "#57404a",
+                            "error": "#ba1a1a",
+                            "on-secondary": "#ffffff",
+                            "tertiary-fixed-dim": "#c6bfff",
+                            "on-tertiary-container": "#fffbff",
+                            "on-secondary-fixed-variant": "#2f4a59",
+                            "on-primary": "#ffffff",
+                            "on-tertiary-fixed-variant": "#4029ba",
+                            "on-secondary-fixed": "#001e2c",
+                            "on-background": "#001e2c",
+                            "on-error": "#ffffff",
+                            "secondary-fixed-dim": "#aecadc",
+                            "tertiary-fixed": "#e4dfff",
+                            "surface-variant": "#cae7f9",
+                            "inverse-on-surface": "#e2f3ff",
+                            "secondary-fixed": "#cae7f9",
+                            "surface-container-highest": "#cae7f9",
+                            "error-container": "#ffdad6",
+                            "outline-variant": "#debecb",
+                            "surface-dim": "#c2def0",
+                            "on-tertiary-fixed": "#160066",
+                            "outline": "#8a707b",
+                            "secondary": "#476271",
+                            "on-primary-fixed": "#3d0027",
+                            "on-error-container": "#93000a",
+                            "primary-container": "#d42794",
+                            "tertiary-container": "#6f5fea",
+                            "surface-tint": "#b5007c",
+                            "on-primary-container": "#fffbff"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                            "headline": [
+                                    "Manrope"
+                            ],
+                            "display": [
+                                    "Manrope"
+                            ],
+                            "body": [
+                                    "Inter"
+                            ],
+                            "label": [
+                                    "Inter"
+                            ]
+                    },
+                    "fontSize": {}
+            },
+                },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #001e2c; /* Deep charcoal/navy for modal bg */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline, .font-display {
+            font-family: 'Manrope', sans-serif;
+        }
+        
+        /* Blurred Orbs Background */
+        .bg-orb-1 {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(176, 0, 121, 0.15) 0%, rgba(176, 0, 121, 0) 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .bg-orb-2 {
+            position: absolute;
+            bottom: 10%;
+            right: 15%;
+            width: 35vw;
+            height: 35vw;
+            background: radial-gradient(circle, rgba(86, 68, 208, 0.15) 0%, rgba(86, 68, 208, 0) 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        /* Glassmorphic Modal */
+        .glass-modal {
+            background: rgba(245, 250, 255, 0.95);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            box-shadow: 0 32px 64px rgba(0, 30, 44, 0.1), 0 0 0 1px rgba(222, 190, 203, 0.15); /* Ambient shadow + Ghost border */
+            z-index: 10;
+        }
+        
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #b00079 0%, #d42794 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Primary Button Gradient */
+        .btn-gradient {
+            background: linear-gradient(135deg, #b00079 0%, #d42794 100%);
+            box-shadow: 0 8px 24px rgba(176, 0, 121, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-gradient:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(176, 0, 121, 0.35);
+        }
+
+        /* Connecting Lines */
+        .node-line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #b00079, #5644d0);
+            z-index: 5;
+            opacity: 0.8;
+            box-shadow: 0 0 8px rgba(176, 0, 121, 0.5);
+        }
+        .node-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #d42794;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 0 12px #d42794;
+        }
+        .node-dot-left { left: 0; }
+        .node-dot-right { right: 0; }
+    </style>
+</head>
+<body class="antialiased">
+<!-- Background Orbs -->
+<div class="bg-orb-1"></div>
+<div class="bg-orb-2"></div>
+<!-- Main Container -->
+<main class="w-full max-w-2xl px-4 py-8 relative z-10 flex flex-col items-center">
+<!-- The Modal -->
+<div class="glass-modal w-full rounded-[2rem] p-8 md:p-12 flex flex-col items-center text-center relative overflow-hidden">
+<!-- Overlapping Profiles Area -->
+<div class="relative w-48 h-24 mb-10 mt-4">
+<!-- Connector Line -->
+<div class="node-line">
+<div class="node-dot node-dot-left"></div>
+<div class="node-dot node-dot-right"></div>
+</div>
+<!-- Profile Left -->
+<div class="absolute left-0 top-0 w-24 h-24 rounded-full border-4 border-surface-container-lowest overflow-hidden z-10 shadow-lg" style="box-shadow: 0 8px 24px rgba(0, 30, 44, 0.08);">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A high-quality, professional headshot of a young woman with natural makeup and soft lighting. The image is bright and airy, fitting a premium, editorial light-mode UI aesthetic. The background is slightly out of focus to draw attention to the subject. Colors are vibrant yet refined, harmonizing with deep navies and soft atmospheric neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABnepCVIPg5IqoXmm-AwQsLczSQQOhidf0RO2PnIDvaRvXZHBuoS0OKjbBFBBabDRuzikrkIthvTDANJvvvXX2lSJT6raFgmWb-ztfD5W8akkncj5fUK7tlIcFSaftLkr97ot7WG12I1DShok2ZRzEzNT_5FtkznNc_D4OzaDGfOKhEEzvLHRe3ZNeMhFnz3KKdKZdoFkksFDFPy4nrWNQfgdNwlU1gkFJl7BNIvxefznmlO7oy32Mlf8aCd3cgEJ4qmyoRJCbDIs"/>
+</div>
+<!-- Profile Right -->
+<div class="absolute right-0 top-0 w-24 h-24 rounded-full border-4 border-surface-container-lowest overflow-hidden z-10 shadow-lg" style="box-shadow: 0 8px 24px rgba(0, 30, 44, 0.08);">
+<img alt="Match Profile" class="w-full h-full object-cover" data-alt="A high-quality, professional headshot of a young man looking directly at the camera with a subtle smile. The lighting is soft and flattering, suitable for a premium dating app interface. The image maintains a bright, clean aesthetic consistent with an editorial design system. The background is a soft, neutral blur to keep the focus on the subject." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6g5y5KuzYlEqN8itkPpZJ7xPyQagVzjkdOVncSXmUfFXiixLSg7_cuozzQq9yw2c1XniuMLYLJNy6MHO_Akg0nAPhIYYej2pWJnoOywkeY84ULjGWGYEMR1H6ysgaC3ccFgQA_StFkcChsuaDdrW7bZw173dutGCaiersIK8AJkHx5eiqf1vaOlrCa5_w8VSZtOopxpuVmsDRYADLSjKqVbXgTMvcNUZWF9HmDDwgO8gjYnhwptMpbWvJSOxGxb4I-pzfYtx5NSw"/>
+</div>
+</div>
+<!-- Privacy Pill -->
+<div class="bg-surface-container-low text-on-surface-variant text-xs font-semibold tracking-wide uppercase px-4 py-1.5 rounded-full flex items-center gap-2 mb-6 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+                Private simulation · Not shown to your match
+            </div>
+<!-- Typography Header -->
+<h1 class="font-display text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4 leading-tight">
+                Preview <span class="text-gradient">Future Us</span>
+</h1>
+<p class="font-body text-base md:text-lg text-on-surface-variant max-w-md mx-auto mb-8 leading-relaxed">
+                Your private dating agents can simulate this connection before Ditto sends the Wednesday invite.
+            </p>
+<!-- Confidence Data Section -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-6 mb-8 shadow-sm border border-outline-variant/15 flex flex-col items-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<span class="font-body text-sm font-semibold text-on-surface">5 signal sources connected · 82% context confidence</span>
+</div>
+<!-- Signal Chips -->
+<div class="flex flex-wrap justify-center gap-3 w-full">
+<!-- Active Chips -->
+<div class="bg-primary-fixed/30 border border-primary-fixed-dim text-on-primary-fixed-variant px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">memory</span> AI Memory
+                    </div>
+<div class="bg-surface-container text-tertiary px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-2 shadow-sm border border-tertiary/20">
+<span class="material-symbols-outlined text-[18px]">map</span> Maps
+                    </div>
+<div class="bg-primary-fixed/30 border border-primary-fixed-dim text-on-primary-fixed-variant px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span> Calendar
+                    </div>
+<!-- Inactive Chips -->
+<div class="bg-surface-dim/30 text-outline px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">restaurant</span> Food
+                    </div>
+<div class="bg-surface-dim/30 text-outline px-4 py-2 rounded-xl text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">music_note</span> Music
+                    </div>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col w-full gap-4 mt-2">
+<button class="btn-gradient w-full py-4 rounded-xl text-on-primary font-display font-bold text-lg tracking-wide flex justify-center items-center gap-2">
+                    Run Future Us
+                    <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+<button class="w-full py-4 rounded-xl text-on-surface font-body font-medium text-base hover:bg-surface-container-low transition-colors duration-200">
+                    Skip and send date invite
+                </button>
+</div>
+<!-- Footer Note -->
+<div class="mt-8 pt-6 border-t border-outline-variant/15 w-full">
+<p class="font-body text-xs text-outline leading-relaxed max-w-sm mx-auto">
+                    Built around relationship-specific signals: rhythm, responsiveness, appreciation, conflict repair, and logistics.
+                </p>
+</div>
+</div>
+</main>
+</body></html>

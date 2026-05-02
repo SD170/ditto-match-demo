@@ -33,3 +33,60 @@ class MatchResponse(BaseModel):
     suggested_time: str = Field(
         ..., description="e.g. Next Wednesday 7:00 PM — Ditto drop callback"
     )
+
+
+class FutureUsRequest(BaseModel):
+    user_bio: str = Field(..., min_length=1)
+    match: Person
+
+
+class ConnectedSignal(BaseModel):
+    source: str
+    status: str
+    insight: str
+    confidence: int = Field(..., ge=0, le=100)
+
+
+class ContextConfidence(BaseModel):
+    score: int = Field(..., ge=0, le=100)
+    label: str
+    explanation: str
+
+
+class ChemistryDimension(BaseModel):
+    name: str
+    score: int = Field(..., ge=0, le=100)
+    signal: str
+    opportunity: str
+
+
+class FutureUsScenario(BaseModel):
+    title: str
+    timeframe: str
+    prompt: str
+    simulation: str
+    best_move: str
+    watchout: str
+
+
+class BestDatePlan(BaseModel):
+    title: str
+    location: str
+    suggested_time: str
+    plan: list[str]
+    why_it_works: str
+    invite_text: str
+
+
+class FutureUsResponse(BaseModel):
+    title: str
+    subtitle: str
+    match_name: str
+    couple_thesis: str
+    confidence: ContextConfidence
+    connected_signals: list[ConnectedSignal]
+    chemistry_map: list[ChemistryDimension]
+    scenarios: list[FutureUsScenario]
+    best_date: BestDatePlan
+    privacy_note: str
+    research_note: str
