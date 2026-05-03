@@ -43,7 +43,7 @@ function Portrait() {
 export function AboutPage() {
   return (
     <>
-      <StepRail step="03" label="Hire him" />
+      <StepRail step="04" label="Hire him" />
       <main className="mx-auto max-w-2xl px-6 py-16 md:px-12">
         <p className="mb-2 text-[10px] font-black uppercase tracking-[0.4em] text-primary/60">Saswata Dutta</p>
 

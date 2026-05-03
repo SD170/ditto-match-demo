@@ -20,8 +20,9 @@ class Settings(BaseSettings):
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_model: str = "openai/gpt-oss-20b:free"
 
-    # Lexical RAG (BM25): max profiles passed to the LLM after retrieval
-    rag_top_k: int = 12
+    # Lightweight hybrid retrieval: the demo pools are only ~20 profiles, so the
+    # LLM can usually see the whole age-filtered pool after BM25/persona ordering.
+    rag_top_k: int = 40
 
     # Optional: https://www.pexels.com/api/ — used by scripts/fetch_pexels_pool_images.py
     pexels_api_key: str | None = None

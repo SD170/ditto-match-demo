@@ -16,11 +16,11 @@ def rich_person() -> Person:
         bio="Gap year before med — volunteering at a clinic and obsessed with soup dumplings.",
         image="https://example.com/maya.jpg",
         persona_graph={
-            "chatgpt_memory": ["Gets calmer when plans have a soft exit", "Values consistent follow-through over intense flirting"],
-            "google_maps": {"frequent_places": ["North Quad Clinic", "Bao Alley", "Riverside Walk"]},
-            "doordash": {"repeat_orders": ["soup dumplings", "ginger tea"]},
-            "spotify": {"top_moods": ["soft indie", "study focus"]},
-            "calendar": {"free_windows": ["Wednesday 7 PM", "Sunday afternoon"]},
+            "ai_memory_summary": ["Gets calmer when plans have a soft exit", "Values consistent follow-through over intense flirting"],
+            "location_context": {"frequent_places": ["North Quad Clinic", "Bao Alley", "Riverside Walk"]},
+            "food_ordering_context": {"repeat_orders": ["soup dumplings", "ginger tea"]},
+            "music_context": {"top_moods": ["soft indie", "study focus"]},
+            "calendar_context": {"free_windows": ["Wednesday 7 PM", "Sunday afternoon"]},
         },
     )
 
@@ -37,10 +37,10 @@ def llm_payload() -> dict:
             "explanation": "The agents had enough opt-in context to reason about rhythm, repair, food, and logistics.",
         },
         "connected_signals": [
-            {"source": "ChatGPT Memory", "status": "Opt-in persona graph", "insight": "Both prefer clear intent over performative mystery.", "confidence": 91},
-            {"source": "Google Maps", "status": "Routine overlap", "insight": "Bao Alley sits between both evening paths.", "confidence": 84},
-            {"source": "DoorDash", "status": "Comfort food signal", "insight": "Soup dumplings are a low-pressure shared ritual.", "confidence": 88},
-            {"source": "Spotify", "status": "Vibe resonance", "insight": "Soft indie plus study focus creates calm first-date energy.", "confidence": 74},
+            {"source": "AI Memory", "status": "Opt-in persona graph", "insight": "Both prefer clear intent over performative mystery.", "confidence": 91},
+            {"source": "Location Context", "status": "Routine overlap", "insight": "Bao Alley sits between both evening paths.", "confidence": 84},
+            {"source": "Food Ordering", "status": "Comfort food signal", "insight": "Soup dumplings are a low-pressure shared ritual.", "confidence": 88},
+            {"source": "Music Context", "status": "Vibe resonance", "insight": "Soft indie plus study focus creates calm first-date energy.", "confidence": 74},
             {"source": "Calendar", "status": "Energy window", "insight": "Wednesday 7 PM is available without sleep debt.", "confidence": 79},
         ],
         "chemistry_map": [
@@ -110,7 +110,7 @@ def test_future_us_uses_openrouter_llm_and_rich_persona_graph(monkeypatch) -> No
     assert captured["json"]["model"] == "openai/gpt-oss-20b:free"
     sent = captured["json"]["messages"][1]["content"]
     assert "persona_graph" in sent
-    assert "DoorDash" in sent or "doordash" in sent
+    assert "food_ordering_context" in sent
     assert "not a prediction" in captured["json"]["messages"][0]["content"].lower()
 
 

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
 import { AppLayout } from './components/layout'
-import { AboutPage, LandingPage, MatchesPage } from './pages'
+import { AboutPage, ConnectContextPage, LandingPage, MatchesPage } from './pages'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -21,6 +21,7 @@ export default function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/connect" element={<ConnectContextPage />} />
           <Route path="/matches" element={<MatchesPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Route>

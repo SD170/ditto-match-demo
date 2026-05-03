@@ -5,67 +5,76 @@
     "bio": "Gap year before med — I'm volunteering at a clinic and learning to sleep again. Want someone who thinks soup dumplings fix most problems.",
     "image": "https://images.pexels.com/photos/34970549/pexels-photo-34970549.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Maya is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Maya gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Maya may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Maya Singh tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter.",
+        "Maya Singh's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit. Public-bio cue: Gap year before med Im volunteering at a.",
+        "Memory synthesis suggests Maya Singh notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "independence",
+          "kindness",
+          "adventurous calm"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "optional second stops",
+          "clear exits",
+          "being game for tiny adventures"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "overplanning",
+          "clingy escalation",
+          "ignoring social battery"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Maya Singh :: Gap year before med  Im volunteering at a clinic and learning to sleep again Want someone ",
+        "demo_match_angle": "food comfort + message repair"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
           "Student Health Clinic",
           "Campus Library",
           "Corner Market"
         ],
         "date_zone": "Student Health Clinic + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "mobility_pattern": "walkable dates preferred",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
           "Wednesday 7 PM",
           "Sunday 3 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "best after structured obligations; dislikes ambiguous late-night plans",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
           "soup dumplings",
           "ginger tea",
-          "fries"
+          "scallion pancakes"
         ],
         "favorite_date_food": "soup dumplings",
-        "diet_notes": "likes shareable snacks"
+        "diet_notes": "likes shareable snacks",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
           "soft indie + focus beats",
-          "rainy night walks"
+          "rainy decompression playlists"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "small acoustic set",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "gym streak",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "Apple Watch shows consistent evening walks",
+        "date_energy": "walk-and-talk dates work well; avoid marathon first dates",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -75,67 +84,76 @@
     "bio": "Art history + iced latte dependency. I'll narrate any painting like it's reality TV. Bonus if you can sprint a museum wing without guilt.",
     "image": "https://images.pexels.com/photos/26728099/pexels-photo-26728099.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Riley is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Riley gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Riley may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Riley Thompson's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit.",
+        "Memory synthesis suggests Riley Thompson notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures. Public-bio cue: Art history iced latte dependency Ill narrate any.",
+        "Riley Thompson gets more playful when the other person makes space for their niche obsession instead of treating it like trivia."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "intellectual honesty",
+          "humor",
+          "reciprocity"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "laughing at themselves",
+          "naming intent",
+          "following up with specifics"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "debate-as-flirting forever",
+          "flakiness",
+          "making everything a performance"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Riley Thompson :: Art history  iced latte dependency Ill narrate any painting like its reality TV Bonus if y",
+        "demo_match_angle": "creative novelty + bounded logistics"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
           "Campus Gallery",
           "Campus Library",
           "Corner Market"
         ],
         "date_zone": "Campus Gallery + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "mobility_pattern": "avoids 35+ minute detours",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "best after structured obligations; dislikes ambiguous late-night plans",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
           "iced vanilla latte",
-          "mango lassi",
-          "edamame"
+          "almond croissant",
+          "matcha cookie"
         ],
         "favorite_date_food": "iced vanilla latte",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "diet_notes": "prefers something not too messy for date one",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "museum-core classical",
-          "pre-game confidence"
+          "dream pop museum walks",
+          "indie film scores"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "gallery opening over club night",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "long walks",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "voice-note curious, short-text practical",
+        "repair_hint": "best invites are specific and not overexplained",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -145,67 +163,76 @@
     "bio": "Field biologist — I smell like trail mix and sunscreen half the year. Looking for someone who won't flinch at a 5am hike pitch.",
     "image": "https://images.pexels.com/photos/7468194/pexels-photo-7468194.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Zoe is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Zoe gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Zoe may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Memory synthesis suggests Zoe Martinez notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures.",
+        "Zoe Martinez gets more playful when the other person makes space for their niche obsession instead of treating it like trivia. Public-bio cue: Field biologist I smell like trail mix and.",
+        "Conflict pattern: Zoe Martinez may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "grounded romance",
+          "routine compatibility",
+          "repair"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "punctuality",
+          "appreciation texts",
+          "food-based care"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "unexplained disappearances",
+          "sleep-debt dates",
+          "sarcastic deflection"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Zoe Martinez :: Field biologist  I smell like trail mix and sunscreen half the year Looking for someone wh",
+        "demo_match_angle": "ambition + decompression rhythm"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Riverside Trailhead",
+          "Campus Gallery",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Riverside Trailhead + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "Campus Gallery + Corner Market loop",
+        "mobility_pattern": "likes one scenic optional stop",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Friday 6:45 PM",
+          "Sunday 4 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "prefers decompression dates after intense work or study windows",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "taco bowl",
-          "cold brew",
-          "garlic knots"
+          "spicy miso ramen",
+          "edamame",
+          "mango lassi"
         ],
-        "favorite_date_food": "taco bowl",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "spicy miso ramen",
+        "diet_notes": "comfort food lowers first-date anxiety",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "lo-fi study jazz",
-          "deep focus"
+          "dream pop museum walks",
+          "indie film scores"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "gallery opening over club night",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "pickup soccer",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "pauses before emotional replies instead of reacting instantly",
+        "repair_hint": "needs patience; silence is not always disinterest",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -215,67 +242,76 @@
     "bio": "Night-shift nurse new to days off that aren't just recovery naps. First date: daylight, caffeine, zero small talk about 'how tired' we are.",
     "image": "https://images.pexels.com/photos/30468636/pexels-photo-30468636.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Ava is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Ava gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Ava may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Ava Lindstrom gets more playful when the other person makes space for their niche obsession instead of treating it like trivia.",
+        "Conflict pattern: Ava Lindstrom may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation. Public-bio cue: Nightshift nurse new to days off that arent.",
+        "Ava Lindstrom is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "novelty",
+          "gentle teasing",
+          "craft"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "showing their work",
+          "sharing playlists",
+          "dates with a small mission"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "too-cool energy",
+          "rushing vulnerability",
+          "messy logistics"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Ava Lindstrom :: Nightshift nurse new to days off that arent just recovery naps First date daylight caffein",
+        "demo_match_angle": "shared ritual + optional adventure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Sunrise Coffee Kiosk",
+          "Riverside Walk",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Sunrise Coffee Kiosk + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Riverside Walk + Corner Market loop",
+        "mobility_pattern": "comfortable around campus transit",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Wednesday 7 PM",
-          "Sunday 3 PM"
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "social battery drops after 10 PM; first dates need a clean endpoint",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "matcha soft serve",
-          "protein bowl",
-          "mochi donut"
+          "iced vanilla latte",
+          "almond croissant",
+          "matcha cookie"
         ],
-        "favorite_date_food": "matcha soft serve",
-        "diet_notes": "likes shareable snacks"
+        "favorite_date_food": "iced vanilla latte",
+        "diet_notes": "usually wants a drink + tiny food anchor",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "main-character night walk playlist",
-          "Sunday reset"
+          "alt-pop",
+          "sunset walk playlists"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "casual campus concert",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "stretching they keep forgetting",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "weekend outdoor activity from wearable summaries",
+        "date_energy": "sunlight + snack date lands better than a loud bar",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -285,67 +321,76 @@
     "bio": "Left agency life for ceramics. My hands are always a little dusty. If you respect the kiln schedule, you respect me.",
     "image": "https://images.pexels.com/photos/7093719/pexels-photo-7093719.png?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Chloe is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Chloe gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Chloe may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Conflict pattern: Chloe Bennett may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation.",
+        "Chloe Bennett is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later. Public-bio cue: Left agency life for ceramics My hands are.",
+        "Chloe Bennett tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "service",
+          "presence",
+          "quiet confidence"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "noticing effort",
+          "asking before assuming",
+          "bounded first dates"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "grandstanding",
+          "ignoring comfort",
+          "turning dates into interviews"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Chloe Bennett :: Left agency life for ceramics My hands are always a little dusty If you respect the kiln s",
+        "demo_match_angle": "humor + directness under pressure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "West Arts Kiln Studio",
+          "Student Union",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "West Arts Kiln Studio + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "Student Union + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Thursday 7:30 PM",
+          "Saturday 11 AM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "warms up when the plan has one anchor and one optional detour",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "shawarma wrap",
-          "ginger tea",
-          "fries"
+          "cardamom cold brew",
+          "breakfast taco",
+          "banana bread"
         ],
-        "favorite_date_food": "shawarma wrap",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "cardamom cold brew",
+        "diet_notes": "likes shareable snacks",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "soft indie + focus beats",
+          "soft indie + study focus",
           "rainy night walks"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "small venue over arena",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "gym streak",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "flirty when logistics are settled, avoidant when plans are vague",
+        "repair_hint": "pin down time/place before escalating the vibe",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -355,67 +400,76 @@
     "bio": "Product designer who still sketches on paper. I want a date where we redesign a bad menu together and tip well anyway.",
     "image": "https://images.pexels.com/photos/34534596/pexels-photo-34534596.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Priya is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Priya gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Priya may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Priya Desai is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later.",
+        "Priya Desai tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter. Public-bio cue: Product designer who still sketches on paper I.",
+        "Priya Desai's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "warmth",
+          "follow-through",
+          "low-pressure clarity"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "specific plans",
+          "remembering small details",
+          "gentle directness"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "vague invites",
+          "testing with silence",
+          "last-minute chaos"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Priya Desai :: Product designer who still sketches on paper I want a date where we redesign a bad menu to",
+        "demo_match_angle": "food comfort + message repair"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Design Library",
+          "North Quad",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Design Library + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "North Quad + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "social battery drops after 10 PM; first dates need a clean endpoint",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "ramen",
-          "mango lassi",
-          "edamame"
+          "street tacos",
+          "horchata",
+          "chips and salsa"
         ],
-        "favorite_date_food": "ramen",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "street tacos",
+        "diet_notes": "prefers something not too messy for date one",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "hyperpop gym mix",
-          "pre-game confidence"
+          "upbeat pop for errands",
+          "comfort albums from high school"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "outdoor show over packed club",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "long walks",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -425,67 +479,76 @@
     "bio": "PhD candidate in econ — I chart feelings like they're time series. Seeking someone who laughs at my regression jokes.",
     "image": "https://images.pexels.com/photos/3768720/pexels-photo-3768720.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Emma is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Emma gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Emma may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Emma Walsh tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter.",
+        "Emma Walsh's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit. Public-bio cue: PhD candidate in econ I chart feelings like.",
+        "Memory synthesis suggests Emma Walsh notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "curiosity",
+          "playful competence",
+          "creative momentum"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "asking real questions",
+          "turning errands into bits",
+          "showing enthusiasm without pressure"
         ],
         "watchouts": [
           "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "one-word replies",
+          "mocking their niche interests"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Emma Walsh :: PhD candidate in econ  I chart feelings like theyre time series Seeking someone who laughs",
+        "demo_match_angle": "creative novelty + bounded logistics"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Graduate Study Commons",
+          "Campus Gallery",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Graduate Study Commons + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Campus Gallery + Corner Market loop",
+        "mobility_pattern": "likes one scenic optional stop",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Wednesday 7 PM",
-          "Sunday 3 PM"
+          "Tuesday 6:30 PM",
+          "Friday 8 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "social battery drops after 10 PM; first dates need a clean endpoint",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
           "soup dumplings",
-          "cold brew",
-          "garlic knots"
+          "ginger tea",
+          "cucumber salad"
         ],
         "favorite_date_food": "soup dumplings",
-        "diet_notes": "likes shareable snacks"
+        "diet_notes": "comfort food lowers first-date anxiety",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "museum-core classical",
-          "deep focus"
+          "dream pop museum walks",
+          "indie film scores"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "gallery opening over club night",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "pickup soccer",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "low-impact movement pattern from Health app",
+        "date_energy": "short scenic loop beats competitive activity",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -495,67 +558,76 @@
     "bio": "Returned to school for speech pathology after a decade in hospitality. I read lips at loud bars — it's a party trick and a coping skill.",
     "image": "https://images.pexels.com/photos/16097514/pexels-photo-16097514.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Hannah is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Hannah gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Hannah may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Hannah Lee's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit.",
+        "Memory synthesis suggests Hannah Lee notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures. Public-bio cue: Returned to school for speech pathology after a.",
+        "Hannah Lee gets more playful when the other person makes space for their niche obsession instead of treating it like trivia."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "ambition",
+          "emotional steadiness",
+          "shared rituals"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "respecting busy windows",
+          "checking in after hard days",
+          "making practical plans"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "calendar disrespect",
+          "intensity without consistency",
+          "dismissive jokes"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Hannah Lee :: Returned to school for speech pathology after a decade in hospitality I read lips at loud ",
+        "demo_match_angle": "ambition + decompression rhythm"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Glasshouse Cafe",
+          "Campus Gallery",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Glasshouse Cafe + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "Campus Gallery + Corner Market loop",
+        "mobility_pattern": "comfortable around campus transit",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Thursday 7:30 PM",
+          "Saturday 11 AM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "warms up when the plan has one anchor and one optional detour",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "taco bowl",
-          "protein bowl",
-          "mochi donut"
+          "ginger tea",
+          "mochi donut",
+          "fries"
         ],
-        "favorite_date_food": "taco bowl",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "ginger tea",
+        "diet_notes": "usually wants a drink + tiny food anchor",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "museum-core classical",
-          "Sunday reset"
+          "dream pop museum walks",
+          "indie film scores"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "gallery opening over club night",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "stretching they keep forgetting",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "weekend outdoor activity from wearable summaries",
+        "date_energy": "sunlight + snack date lands better than a loud bar",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "flirty when logistics are settled, avoidant when plans are vague",
+        "repair_hint": "pin down time/place before escalating the vibe",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -565,67 +637,76 @@
     "bio": "Divorced, not damaged — coparenting a very opinionated cat. I cook loud Italian food and want someone who shows up hungry.",
     "image": "https://images.pexels.com/photos/30479371/pexels-photo-30479371.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Sofia is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Sofia gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Sofia may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Memory synthesis suggests Sofia Rossi notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures.",
+        "Sofia Rossi gets more playful when the other person makes space for their niche obsession instead of treating it like trivia. Public-bio cue: Divorced not damaged coparenting a very opinionated cat.",
+        "Conflict pattern: Sofia Rossi may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "independence",
+          "kindness",
+          "adventurous calm"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "optional second stops",
+          "clear exits",
+          "being game for tiny adventures"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "overplanning",
+          "clingy escalation",
+          "ignoring social battery"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Sofia Rossi :: Divorced not damaged  coparenting a very opinionated cat I cook loud Italian food and want",
+        "demo_match_angle": "shared ritual + optional adventure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Night Market Alley",
+          "Riverside Walk",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Night Market Alley + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "Riverside Walk + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Friday 6:45 PM",
+          "Sunday 4 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "prefers decompression dates after intense work or study windows",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "garlic noodles",
+          "soup dumplings",
           "ginger tea",
-          "fries"
+          "scallion pancakes"
         ],
-        "favorite_date_food": "garlic noodles",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "likes shareable snacks",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "soft indie + focus beats",
+          "soft indie + study focus",
           "rainy night walks"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "small venue over arena",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "gym streak",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "low-impact movement pattern from Health app",
+        "date_energy": "short scenic loop beats competitive activity",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "sends memes first, sincerity second",
+        "repair_hint": "repair works when humor is followed by one clear sentence",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -635,67 +716,76 @@
     "bio": "D1 track — my calendar is splits and study hall. Cute if you can keep pace on an easy jog and pretend you're not dying.",
     "image": "https://images.pexels.com/photos/36363694/pexels-photo-36363694.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Jade is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Jade gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Jade may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Jade Patterson gets more playful when the other person makes space for their niche obsession instead of treating it like trivia.",
+        "Conflict pattern: Jade Patterson may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation. Public-bio cue: D1 track my calendar is splits and study.",
+        "Jade Patterson is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "intellectual honesty",
+          "humor",
+          "reciprocity"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "laughing at themselves",
+          "naming intent",
+          "following up with specifics"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "debate-as-flirting forever",
+          "flakiness",
+          "making everything a performance"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Jade Patterson :: D1 track  my calendar is splits and study hall Cute if you can keep pace on an easy jog an",
+        "demo_match_angle": "humor + directness under pressure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Athletics Loop",
+          "Student Union",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Athletics Loop + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Student Union + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Wednesday 7 PM",
-          "Sunday 3 PM"
+          "Monday 6 PM",
+          "Wednesday 8 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "busy blocks are real, but they protect planned time carefully",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "shawarma wrap",
-          "mango lassi",
-          "edamame"
+          "brown sugar boba",
+          "popcorn chicken",
+          "jasmine milk tea"
         ],
-        "favorite_date_food": "shawarma wrap",
-        "diet_notes": "likes shareable snacks"
+        "favorite_date_food": "brown sugar boba",
+        "diet_notes": "prefers something not too messy for date one",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "high-BPM pop",
-          "pre-game confidence"
+          "upbeat pop for errands",
+          "comfort albums from high school"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "outdoor show over packed club",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "long walks",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "low-impact movement pattern from Health app",
+        "date_energy": "short scenic loop beats competitive activity",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+      "in_app_message_context": {
+        "pattern": "flirty when logistics are settled, avoidant when plans are vague",
+        "repair_hint": "pin down time/place before escalating the vibe",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -705,67 +795,76 @@
     "bio": "First-gen STEM — I tutor calc to pay rent and stress-bake conchas. Date me if you can handle flour on the counter.",
     "image": "https://images.pexels.com/photos/9304685/pexels-photo-9304685.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Nina is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Nina gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Nina may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Conflict pattern: Nina Alvarez may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation.",
+        "Nina Alvarez is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later. Public-bio cue: Firstgen STEM I tutor calc to pay rent.",
+        "Nina Alvarez tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "grounded romance",
+          "routine compatibility",
+          "repair"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "punctuality",
+          "appreciation texts",
+          "food-based care"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "unexplained disappearances",
+          "sleep-debt dates",
+          "sarcastic deflection"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Nina Alvarez :: Firstgen STEM  I tutor calc to pay rent and stressbake conchas Date me if you can handle f",
+        "demo_match_angle": "food comfort + message repair"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "STEM Tutoring Center",
+          "North Quad",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "STEM Tutoring Center + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "North Quad + Corner Market loop",
+        "mobility_pattern": "likes one scenic optional stop",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Thursday 7:30 PM",
+          "Saturday 11 AM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "warms up when the plan has one anchor and one optional detour",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "conchas",
-          "cold brew",
-          "garlic knots"
+          "spicy miso ramen",
+          "edamame",
+          "mango lassi"
         ],
-        "favorite_date_food": "conchas",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "spicy miso ramen",
+        "diet_notes": "comfort food lowers first-date anxiety",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "lo-fi study jazz",
-          "deep focus"
+          "lo-fi focus beats",
+          "warm R&B"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "tiny venue with seats",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "pickup soccer",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "low-impact movement pattern from Health app",
+        "date_energy": "short scenic loop beats competitive activity",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -775,67 +874,75 @@
     "bio": "UX researcher who actually talks to users. I'll take notes on our banter. Red flag if you hate sticky notes.",
     "image": "https://images.pexels.com/photos/29852852/pexels-photo-29852852.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Lily is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Lily gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Lily may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Lily Chen is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later.",
+        "Lily Chen tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter. Public-bio cue: UX researcher who actually talks to users Ill.",
+        "Lily Chen's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "novelty",
+          "gentle teasing",
+          "craft"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "showing their work",
+          "sharing playlists",
+          "dates with a small mission"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "too-cool energy",
+          "rushing vulnerability",
+          "messy logistics"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Lily Chen :: UX researcher who actually talks to users Ill take notes on our banter Red flag if you hat",
+        "demo_match_angle": "creative novelty + bounded logistics"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Glasshouse Cafe",
-          "Campus Library",
-          "Corner Market"
+          "Corner Market",
+          "Campus Library"
         ],
-        "date_zone": "Glasshouse Cafe + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "Corner Market + Corner Market loop",
+        "mobility_pattern": "comfortable around campus transit",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Wednesday 7 PM",
+          "Sunday 3 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "best after structured obligations; dislikes ambiguous late-night plans",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "soup dumplings",
-          "protein bowl",
-          "mochi donut"
+          "iced vanilla latte",
+          "almond croissant",
+          "matcha cookie"
         ],
-        "favorite_date_food": "soup dumplings",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "iced vanilla latte",
+        "diet_notes": "usually wants a drink + tiny food anchor",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "ambient focus",
-          "Sunday reset"
+          "alt-pop",
+          "sunset walk playlists"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "casual campus concert",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "stretching they keep forgetting",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "pauses before emotional replies instead of reacting instantly",
+        "repair_hint": "needs patience; silence is not always disinterest",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -845,67 +952,75 @@
     "bio": "Corporate lawyer by day, Afrobeat dance classes by night. I need someone who doesn't ask why I'm still energetic at 10pm.",
     "image": "https://images.pexels.com/photos/29811345/pexels-photo-29811345.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Grace is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Grace gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Grace may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Grace Okafor tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter.",
+        "Grace Okafor's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit. Public-bio cue: Corporate lawyer by day Afrobeat dance classes by.",
+        "Memory synthesis suggests Grace Okafor notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "service",
+          "presence",
+          "quiet confidence"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "noticing effort",
+          "asking before assuming",
+          "bounded first dates"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "grandstanding",
+          "ignoring comfort",
+          "turning dates into interviews"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Grace Okafor :: Corporate lawyer by day Afrobeat dance classes by night I need someone who doesnt ask why ",
+        "demo_match_angle": "ambition + decompression rhythm"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Downtown Courthouse Steps",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Downtown Courthouse Steps + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Campus Library + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Wednesday 7 PM",
-          "Sunday 3 PM"
+          "Friday 6:45 PM",
+          "Sunday 4 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "prefers decompression dates after intense work or study windows",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "taco bowl",
-          "ginger tea",
-          "fries"
+          "cardamom cold brew",
+          "breakfast taco",
+          "banana bread"
         ],
-        "favorite_date_food": "taco bowl",
-        "diet_notes": "likes shareable snacks"
+        "favorite_date_food": "cardamom cold brew",
+        "diet_notes": "likes shareable snacks",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "Afrobeats + dancehall",
+          "soft indie + study focus",
           "rainy night walks"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "small venue over arena",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "gym streak",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "Apple Watch/Health trend: gym streak with recovery days",
+        "date_energy": "active date is fine if there is food after",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
+      "in_app_message_context": {
         "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+        "repair_hint": "responds well to explicit reassurance and concrete next steps",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -915,67 +1030,76 @@
     "bio": "Photojournalism MFA — I shoot protests and farmers' markets with the same lens. Let's wander until the light gets honest.",
     "image": "https://images.pexels.com/photos/20022699/pexels-photo-20022699.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Violet is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Violet gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Violet may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Violet Harper's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit.",
+        "Memory synthesis suggests Violet Harper notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures. Public-bio cue: Photojournalism MFA I shoot protests and farmers markets.",
+        "Violet Harper gets more playful when the other person makes space for their niche obsession instead of treating it like trivia."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "warmth",
+          "follow-through",
+          "low-pressure clarity"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "specific plans",
+          "remembering small details",
+          "gentle directness"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "vague invites",
+          "testing with silence",
+          "last-minute chaos"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Violet Harper :: Photojournalism MFA  I shoot protests and farmers markets with the same lens Lets wander u",
+        "demo_match_angle": "shared ritual + optional adventure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Old Market Street",
+          "Riverside Walk",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Old Market Street + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "Riverside Walk + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
           "Tuesday 6:30 PM",
           "Friday 8 PM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "social battery drops after 10 PM; first dates need a clean endpoint",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "spicy pho",
-          "mango lassi",
-          "edamame"
+          "street tacos",
+          "horchata",
+          "chips and salsa"
         ],
-        "favorite_date_food": "spicy pho",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "street tacos",
+        "diet_notes": "prefers something not too messy for date one",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "hyperpop gym mix",
-          "pre-game confidence"
+          "upbeat pop for errands",
+          "comfort albums from high school"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "outdoor show over packed club",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "long walks",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "weekend outdoor activity from wearable summaries",
+        "date_energy": "sunlight + snack date lands better than a loud bar",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "pauses before emotional replies instead of reacting instantly",
+        "repair_hint": "needs patience; silence is not always disinterest",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -985,67 +1109,76 @@
     "bio": "High school counselor — I've heard every excuse; yours better be creative. I kayak when I need to not fix anyone for an hour.",
     "image": "https://images.pexels.com/photos/8871851/pexels-photo-8871851.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Isla is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Isla gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Isla may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Memory synthesis suggests Isla MacKenzie notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures.",
+        "Isla MacKenzie gets more playful when the other person makes space for their niche obsession instead of treating it like trivia. Public-bio cue: High school counselor Ive heard every excuse yours.",
+        "Conflict pattern: Isla MacKenzie may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "curiosity",
+          "playful competence",
+          "creative momentum"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "asking real questions",
+          "turning errands into bits",
+          "showing enthusiasm without pressure"
         ],
         "watchouts": [
           "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "one-word replies",
+          "mocking their niche interests"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Isla MacKenzie :: High school counselor  Ive heard every excuse yours better be creative I kayak when I need",
+        "demo_match_angle": "humor + directness under pressure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Boathouse Dock",
+          "Student Union",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Boathouse Dock + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "Student Union + Corner Market loop",
+        "mobility_pattern": "likes one scenic optional stop",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Monday 6 PM",
+          "Wednesday 8 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "busy blocks are real, but they protect planned time carefully",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "shawarma wrap",
-          "cold brew",
-          "garlic knots"
+          "soup dumplings",
+          "ginger tea",
+          "cucumber salad"
         ],
-        "favorite_date_food": "shawarma wrap",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "comfort food lowers first-date anxiety",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "lo-fi study jazz",
-          "deep focus"
+          "lo-fi focus beats",
+          "warm R&B"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "tiny venue with seats",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "pickup soccer",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "low-impact movement pattern from Health app",
+        "date_energy": "short scenic loop beats competitive activity",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -1055,67 +1188,75 @@
     "bio": "Two kids, one ex, zero drama — I run a bookkeeping side hustle and a tight ship. Looking for grown-up chemistry and bad puns.",
     "image": "https://images.pexels.com/photos/10437480/pexels-photo-10437480.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Mia is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Mia gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Mia may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Mia Torres gets more playful when the other person makes space for their niche obsession instead of treating it like trivia.",
+        "Conflict pattern: Mia Torres may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation. Public-bio cue: Two kids one ex zero drama I run.",
+        "Mia Torres is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "ambition",
+          "emotional steadiness",
+          "shared rituals"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "respecting busy windows",
+          "checking in after hard days",
+          "making practical plans"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "calendar disrespect",
+          "intensity without consistency",
+          "dismissive jokes"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Mia Torres :: Two kids one ex zero drama  I run a bookkeeping side hustle and a tight ship Looking for g",
+        "demo_match_angle": "food comfort + message repair"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Glasshouse Cafe",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Glasshouse Cafe + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Campus Library + Corner Market loop",
+        "mobility_pattern": "comfortable around campus transit",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
           "Wednesday 7 PM",
           "Sunday 3 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "best after structured obligations; dislikes ambiguous late-night plans",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "ramen",
-          "protein bowl",
-          "mochi donut"
+          "ginger tea",
+          "mochi donut",
+          "fries"
         ],
-        "favorite_date_food": "ramen",
-        "diet_notes": "likes shareable snacks"
+        "favorite_date_food": "ginger tea",
+        "diet_notes": "usually wants a drink + tiny food anchor",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "main-character night walk playlist",
-          "Sunday reset"
+          "folk + ambient reading soundtracks",
+          "rainy library jazz"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "bookstore mic night",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "stretching they keep forgetting",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "Apple Watch shows consistent evening walks",
+        "date_energy": "walk-and-talk dates work well; avoid marathon first dates",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+      "in_app_message_context": {
+        "pattern": "sends memes first, sincerity second",
+        "repair_hint": "repair works when humor is followed by one clear sentence",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -1125,67 +1266,75 @@
     "bio": "Chef-owner of a tiny brunch spot — I'm always tasting something. If you can't do Tuesday at 3pm, we won't work; that's my weekend.",
     "image": "https://images.pexels.com/photos/25015401/pexels-photo-25015401.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Ella is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Ella gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Ella may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Conflict pattern: Ella Brooks may default to jokes or logistics under stress, but warms back up quickly with direct repair and appreciation.",
+        "Ella Brooks is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later. Public-bio cue: Chefowner of a tiny brunch spot Im always.",
+        "Ella Brooks tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "independence",
+          "kindness",
+          "adventurous calm"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "optional second stops",
+          "clear exits",
+          "being game for tiny adventures"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "overplanning",
+          "clingy escalation",
+          "ignoring social battery"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Ella Brooks :: Chefowner of a tiny brunch spot  Im always tasting something If you cant do Tuesday at 3pm",
+        "demo_match_angle": "creative novelty + bounded logistics"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Tiny Brunch Counter",
-          "Campus Library",
-          "Corner Market"
+          "Corner Market",
+          "Campus Library"
         ],
-        "date_zone": "Tiny Brunch Counter + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "Corner Market + Corner Market loop",
+        "mobility_pattern": "walkable dates preferred",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Thursday 7:30 PM",
+          "Saturday 11 AM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "warms up when the plan has one anchor and one optional detour",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "brunch tacos",
+          "soup dumplings",
           "ginger tea",
-          "fries"
+          "scallion pancakes"
         ],
-        "favorite_date_food": "brunch tacos",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "soup dumplings",
+        "diet_notes": "likes shareable snacks",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "soft indie + focus beats",
+          "soft indie + study focus",
           "rainy night walks"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "small venue over arena",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "gym streak",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "late-night steps spike around study/project deadlines",
+        "date_energy": "choose calm plans that do not add another task",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "voice-note curious, short-text practical",
+        "repair_hint": "best invites are specific and not overexplained",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -1195,67 +1344,76 @@
     "bio": "Paramedic — dark humor required, squeamish people kindly swipe past. I decompress with bad reality TV and good sourdough.",
     "image": "https://images.pexels.com/photos/28289074/pexels-photo-28289074.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Ruby is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Ruby gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Ruby may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Ruby Santos is most responsive to dates that feel designed, not expensive: food anchor, walkable route, and a small story to tell later.",
+        "Ruby Santos tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter. Public-bio cue: Paramedic dark humor required squeamish people kindly swipe.",
+        "Ruby Santos's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "intellectual honesty",
+          "humor",
+          "reciprocity"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "laughing at themselves",
+          "naming intent",
+          "following up with specifics"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "debate-as-flirting forever",
+          "flakiness",
+          "making everything a performance"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Ruby Santos :: Paramedic  dark humor required squeamish people kindly swipe past I decompress with bad re",
+        "demo_match_angle": "ambition + decompression rhythm"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Riverside Walk",
+          "Student Health Clinic",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Riverside Walk + Corner Market loop",
-        "mobility_pattern": "likes public first-meet locations"
+        "date_zone": "Student Health Clinic + Corner Market loop",
+        "mobility_pattern": "avoids 35+ minute detours",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Thursday 7:15 PM",
-          "Saturday 11 AM"
+          "Monday 6 PM",
+          "Wednesday 8 PM"
         ],
-        "energy_notes": "likes one planned thing per evening"
+        "energy_notes": "busy blocks are real, but they protect planned time carefully",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "sourdough toast",
-          "mango lassi",
-          "edamame"
+          "brown sugar boba",
+          "popcorn chicken",
+          "jasmine milk tea"
         ],
-        "favorite_date_food": "sourdough toast",
-        "diet_notes": "will forgive a mid venue if the sauce is good"
+        "favorite_date_food": "brown sugar boba",
+        "diet_notes": "prefers something not too messy for date one",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "hyperpop gym mix",
-          "pre-game confidence"
+          "soft indie + focus beats",
+          "rainy decompression playlists"
         ],
-        "concert_energy": "prefers talking before loud music"
+        "concert_energy": "small acoustic set",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "long walks",
-        "date_energy": "post-workout food is a cheat code"
+      "activity_context": {
+        "routine": "Apple Watch shows consistent evening walks",
+        "date_energy": "walk-and-talk dates work well; avoid marathon first dates",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "uses dry humor to test comfort",
-        "repair_hint": "prefers a concrete next plan after friction"
+      "in_app_message_context": {
+        "pattern": "uses questions to show care; gets dry when overwhelmed",
+        "repair_hint": "a quick check-in beats trying to decode tone",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -1265,67 +1423,76 @@
     "bio": "Architect renovating a fixer-upper — dating me includes drywall dust and strong opinions about trim. I pay for pizza.",
     "image": "https://images.pexels.com/photos/8872747/pexels-photo-8872747.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Clara is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Clara gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Clara may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Clara Jensen tends to trust attraction more when warmth is paired with a concrete plan, not just high-intensity banter.",
+        "Clara Jensen's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit. Public-bio cue: Architect renovating a fixerupper dating me includes drywall.",
+        "Memory synthesis suggests Clara Jensen notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "grounded romance",
+          "routine compatibility",
+          "repair"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "punctuality",
+          "appreciation texts",
+          "food-based care"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "unexplained disappearances",
+          "sleep-debt dates",
+          "sarcastic deflection"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Clara Jensen :: Architect renovating a fixerupper  dating me includes drywall dust and strong opinions abo",
+        "demo_match_angle": "shared ritual + optional adventure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Campus Night Market",
+          "Riverside Walk",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Campus Night Market + Corner Market loop",
-        "mobility_pattern": "walkable dates preferred"
+        "date_zone": "Riverside Walk + Corner Market loop",
+        "mobility_pattern": "likes one scenic optional stop",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
           "Wednesday 7 PM",
           "Sunday 3 PM"
         ],
-        "energy_notes": "best after structured obligations"
+        "energy_notes": "best after structured obligations; dislikes ambiguous late-night plans",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "wood-fired pizza",
-          "cold brew",
-          "garlic knots"
+          "spicy miso ramen",
+          "edamame",
+          "mango lassi"
         ],
-        "favorite_date_food": "wood-fired pizza",
-        "diet_notes": "likes shareable snacks"
+        "favorite_date_food": "spicy miso ramen",
+        "diet_notes": "comfort food lowers first-date anxiety",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "lo-fi study jazz",
-          "deep focus"
+          "lo-fi focus beats",
+          "warm R&B"
         ],
-        "concert_energy": "small venue over arena"
+        "concert_energy": "tiny venue with seats",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "pickup soccer",
-        "date_energy": "walk-and-talk works well"
+      "activity_context": {
+        "routine": "late-night steps spike around study/project deadlines",
+        "date_energy": "choose calm plans that do not add another task",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
+      "in_app_message_context": {
         "pattern": "fast replies when excited, thoughtful paragraphs when safe",
-        "repair_hint": "responds well to explicit reassurance"
+        "repair_hint": "responds well to explicit reassurance and concrete next steps",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   },
@@ -1335,67 +1502,76 @@
     "bio": "Career-switching into tech from publishing — I'm the oldest in the bootcamp and the calmest in a code review. Teach me your shortcuts.",
     "image": "https://images.pexels.com/photos/5804201/pexels-photo-5804201.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1",
     "persona_graph": {
-      "chatgpt_memory": [
-        "Naomi is most attracted to people who notice small details and follow through after the first burst of chemistry.",
-        "Naomi gets warmer when plans are specific but low-pressure; vague \"we should hang\" energy makes them disengage.",
-        "Conflict pattern: Naomi may joke or go practical when nervous, but responds well to direct repair and appreciation."
+      "ai_memory_summary": [
+        "Naomi Park's best first-date state is curious but uncornered: one shared ritual, one optional detour, and a clear exit.",
+        "Memory synthesis suggests Naomi Park notices micro-consistency — remembered preferences, punctuality, and follow-up matter more than big gestures. Public-bio cue: Careerswitching into tech from publishing Im the oldest.",
+        "Naomi Park gets more playful when the other person makes space for their niche obsession instead of treating it like trivia."
       ],
-      "claude_notes": {
+      "conversational_llm_notes": {
         "values": [
-          "specificity",
-          "playfulness",
-          "reliability"
+          "novelty",
+          "gentle teasing",
+          "craft"
         ],
         "green_flags": [
-          "consistent texting",
-          "curiosity about their routine",
-          "dates with built-in conversation props"
+          "showing their work",
+          "sharing playlists",
+          "dates with a small mission"
         ],
         "watchouts": [
-          "performative mystery",
-          "last-minute logistics chaos",
-          "being treated like a profile instead of a person"
-        ]
+          "too-cool energy",
+          "rushing vulnerability",
+          "messy logistics"
+        ],
+        "derived_from": "contextualized opt-in AI assistant memory / exported conversation summaries",
+        "profile_theme": "Naomi Park :: Careerswitching into tech from publishing  Im the oldest in the bootcamp and the calmest i",
+        "demo_match_angle": "humor + directness under pressure"
       },
-      "google_maps": {
+      "location_context": {
         "frequent_places": [
-          "Glasshouse Cafe",
+          "Student Union",
           "Campus Library",
           "Corner Market"
         ],
-        "date_zone": "Glasshouse Cafe + Corner Market loop",
-        "mobility_pattern": "avoids 35+ minute detours"
+        "date_zone": "Student Union + Corner Market loop",
+        "mobility_pattern": "comfortable around campus transit",
+        "raw_source": "contextualized from maps/location history, not stored as raw GPS in this demo"
       },
-      "calendar": {
+      "calendar_context": {
         "free_windows": [
-          "Tuesday 6:30 PM",
-          "Friday 8 PM"
+          "Friday 6:45 PM",
+          "Sunday 4 PM"
         ],
-        "energy_notes": "social battery drops after 10 PM"
+        "energy_notes": "prefers decompression dates after intense work or study windows",
+        "raw_source": "contextualized from calendar availability and recurring busy blocks"
       },
-      "doordash": {
+      "food_ordering_context": {
         "repeat_orders": [
-          "shawarma wrap",
-          "protein bowl",
-          "mochi donut"
+          "ginger tea",
+          "mochi donut",
+          "fries"
         ],
-        "favorite_date_food": "shawarma wrap",
-        "diet_notes": "comfort food beats fancy tasting menus"
+        "favorite_date_food": "ginger tea",
+        "diet_notes": "usually wants a drink + tiny food anchor",
+        "raw_source": "contextualized from food ordering / saved places patterns"
       },
-      "spotify": {
+      "music_context": {
         "top_moods": [
-          "main-character night walk playlist",
-          "Sunday reset"
+          "alt-pop",
+          "sunset walk playlists"
         ],
-        "concert_energy": "dances if the other person starts"
+        "concert_energy": "casual campus concert",
+        "raw_source": "contextualized from Spotify/streaming taste clusters"
       },
-      "health_activity": {
-        "routine": "stretching they keep forgetting",
-        "date_energy": "avoid intense morning plans"
+      "activity_context": {
+        "routine": "late-night steps spike around study/project deadlines",
+        "date_energy": "choose calm plans that do not add another task",
+        "raw_source": "contextualized from Apple Watch / Health / Strava style signals"
       },
-      "message_style": {
-        "pattern": "sends memes as bids for attention",
-        "repair_hint": "likes direct apologies without drama"
+      "in_app_message_context": {
+        "pattern": "flirty when logistics are settled, avoidant when plans are vague",
+        "repair_hint": "pin down time/place before escalating the vibe",
+        "raw_source": "contextualized from previous in-app messages and response rhythm"
       }
     }
   }

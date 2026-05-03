@@ -141,7 +141,7 @@ export function MatchCelebrationModal({ onClose, match, reason, userBio }: Match
                     Let private agents simulate possible dynamics, scenario friction, repair moves, and one compiled first date. Not a prediction — just the conditions that make this match worth testing.
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-300">
-                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">ChatGPT Memory</span>
+                    <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">AI Memory</span>
                     <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Maps + Calendar</span>
                     <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Spotify vibe</span>
                     <span className="rounded-xl border border-white/10 bg-black/35 px-3 py-2">Food graph</span>

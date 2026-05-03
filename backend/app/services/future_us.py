@@ -20,7 +20,7 @@ from app.schemas import (
 
 SYSTEM_PROMPT = """You are Future Us, Ditto's agentic chemistry simulation engine.
 
-You are NOT predicting a relationship. You simulate possible early dynamics using opt-in context and relationship-science-informed dimensions. Use concrete evidence from the provided persona graphs: ChatGPT/Claude memory, Google Maps routines, Calendar, DoorDash/food orders, Spotify/music, health/activity, and message-style notes.
+You are NOT predicting a relationship. You simulate possible early dynamics using opt-in context and relationship-science-informed dimensions. Use concrete evidence from the provided computed persona graphs: AI memory summaries, conversational LLM notes, location routines, calendar availability, food-ordering context, music context, wearable/activity signals, and in-app message style.
 
 Output ONLY valid JSON with this exact shape:
 {
@@ -30,10 +30,10 @@ Output ONLY valid JSON with this exact shape:
   "couple_thesis": "catchy 3-7 word archetype",
   "confidence": {"score": 0-100, "label": "High context confidence", "explanation": "..."},
   "connected_signals": [
-    {"source": "ChatGPT Memory", "status": "...", "insight": "...", "confidence": 0-100},
-    {"source": "Google Maps", "status": "...", "insight": "...", "confidence": 0-100},
-    {"source": "DoorDash", "status": "...", "insight": "...", "confidence": 0-100},
-    {"source": "Spotify", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "AI Memory", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Location Context", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Food Ordering", "status": "...", "insight": "...", "confidence": 0-100},
+    {"source": "Music Context", "status": "...", "insight": "...", "confidence": 0-100},
     {"source": "Calendar", "status": "...", "insight": "...", "confidence": 0-100}
   ],
   "chemistry_map": [
@@ -100,8 +100,8 @@ def _future_us_llm() -> tuple[str, str, str] | None:
 def _fallback_future_us(req: FutureUsRequest) -> FutureUsResponse:
     match = req.match
     graph = match.persona_graph or {}
-    maps = graph.get("google_maps", {}) if isinstance(graph, dict) else {}
-    food = graph.get("doordash", {}) if isinstance(graph, dict) else {}
+    maps = graph.get("location_context", {}) if isinstance(graph, dict) else {}
+    food = graph.get("food_ordering_context", {}) if isinstance(graph, dict) else {}
     location = "North Quad Night Market"
     if isinstance(maps, dict) and maps.get("date_zone"):
         location = str(maps["date_zone"])
@@ -119,10 +119,10 @@ def _fallback_future_us(req: FutureUsRequest) -> FutureUsResponse:
             explanation="Confidence means opt-in context coverage, not the probability that a relationship succeeds.",
         ),
         connected_signals=[
-            ConnectedSignal(source="ChatGPT Memory", status="Persona graph", confidence=86, insight="Uses remembered preferences, communication style, and emotional pacing from synthetic memory."),
-            ConnectedSignal(source="Google Maps", status="Routine overlap", confidence=82, insight=f"Compiles a realistic meeting zone around {location}."),
-            ConnectedSignal(source="DoorDash", status="Food comfort", confidence=80, insight="Turns repeat orders into a low-pressure snack anchor."),
-            ConnectedSignal(source="Spotify", status="Vibe resonance", confidence=72, insight="Uses listening mood to avoid a first date that feels off-tempo."),
+            ConnectedSignal(source="AI Memory", status="Computed persona graph", confidence=86, insight="Uses contextualized preferences, communication style, and emotional pacing from opt-in assistant memory summaries."),
+            ConnectedSignal(source="Location Context", status="Routine overlap", confidence=82, insight=f"Compiles a realistic meeting zone around {location}."),
+            ConnectedSignal(source="Food Ordering", status="Food comfort", confidence=80, insight="Turns repeat orders into a low-pressure snack anchor."),
+            ConnectedSignal(source="Music Context", status="Vibe resonance", confidence=72, insight="Uses listening mood to avoid a first date that feels off-tempo."),
             ConnectedSignal(source="Calendar", status="Energy window", confidence=76, insight="Chooses a time that fits routines instead of forcing peak-social performance."),
         ],
         chemistry_map=[
@@ -162,15 +162,16 @@ async def build_future_us_simulation(req: FutureUsRequest) -> FutureUsResponse:
         "user": {
             "bio": req.user_bio,
             "demo_persona_graph": {
-                "chatgpt_memory": [
+                "ai_memory_summary": [
                     "Cares about building impressive software and tends to overthink whether the other person is genuinely interested.",
                     "Likes concrete plans, gym consistency, ramen/late-night food, and people who communicate directly.",
                 ],
-                "google_maps": {"frequent_places": ["CS building", "campus gym", "late-night ramen row"], "date_zone": "North Quad / ramen row"},
-                "doordash": {"repeat_orders": ["tonkotsu ramen", "mango lassi", "protein bowls"], "favorite_date_food": "ramen"},
-                "spotify": {"top_moods": ["focus beats", "Bollywood nostalgia", "main-character night walks"]},
-                "calendar": {"free_windows": ["Wednesday 7 PM", "Friday after 8 PM"], "energy_notes": "Best after gym or after a build session ships."},
-                "message_style": {"pattern": "fast when excited, analytical when nervous", "repair_hint": "responds well to direct reassurance"},
+                "location_context": {"frequent_places": ["CS building", "campus gym", "late-night ramen row"], "date_zone": "North Quad / ramen row"},
+                "food_ordering_context": {"repeat_orders": ["tonkotsu ramen", "mango lassi", "protein bowls"], "favorite_date_food": "ramen"},
+                "music_context": {"top_moods": ["focus beats", "Bollywood nostalgia", "main-character night walks"]},
+                "calendar_context": {"free_windows": ["Wednesday 7 PM", "Friday after 8 PM"], "energy_notes": "Best after gym or after a build session ships."},
+                "activity_context": {"routine": "Apple Watch shows gym streak + late-night walks", "date_energy": "active first date is fine if there is food after"},
+                "in_app_message_context": {"pattern": "fast when excited, analytical when nervous", "repair_hint": "responds well to direct reassurance"},
             },
         },
         "match": req.match.model_dump(),

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 
 import { postMatch } from '../api/match'
 import { fetchPool } from '../api/pool'
@@ -167,7 +167,7 @@ export function MatchesPage() {
 
   return (
     <>
-      <StepRail step="02" label="Curate" />
+      <StepRail step="03" label="Curate" />
       <main className="mx-auto w-full max-w-screen-2xl flex-1 px-4 py-8 pb-52 sm:px-6 sm:py-12 md:px-12 md:pb-48">
         <section className="mb-12 text-center md:text-left">
           <div className="flex flex-col gap-2">
@@ -188,6 +188,24 @@ export function MatchesPage() {
             </p>
           </div>
         </section>
+
+        <div className="mb-10 flex flex-col justify-between gap-4 rounded-2xl border border-white/10 bg-black/45 px-4 py-5 backdrop-blur-md sm:flex-row sm:items-center sm:px-6">
+          <div className="text-center sm:text-left">
+            <p className="font-label text-[10px] font-black uppercase tracking-[0.35em] text-primary/70">
+              Persona graph
+            </p>
+            <p className="mt-1 text-sm text-zinc-300 md:text-base">
+              Simulate opt-in data connections — improves matching and Future Us.
+            </p>
+          </div>
+          <Link
+            to={searchParams.toString() ? `/connect?${searchParams.toString()}` : '/connect'}
+            className="inline-flex shrink-0 items-center justify-center gap-2 self-center rounded-xl border border-primary/40 bg-primary/15 px-5 py-3 text-xs font-black uppercase tracking-widest text-primary transition-colors hover:border-primary/60 hover:bg-primary/25 sm:self-auto"
+          >
+            Connect your context
+            <span className="material-symbols-outlined text-lg">hub</span>
+          </Link>
+        </div>
 
         {error && (
           <div className="relative mb-8 rounded-2xl border border-red-400/35 bg-black/80 py-3 pl-4 pr-12 text-sm text-red-100 shadow-lg backdrop-blur-sm">

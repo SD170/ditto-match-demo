@@ -25,20 +25,23 @@ LLM_UPSTREAM_USER_MESSAGE = (
     + _DM_SASWATA
 )
 
-SYSTEM_PROMPT = """You are the matchmaking brain for "Ditto AI" — curated real-world dates, no endless swiping, one thoughtful match at a time (think: Wednesday drop energy, campus-safe coffee dates, playful but sincere).
+SYSTEM_PROMPT = """You are the matchmaking brain for "Ditto AI" — curated real-world dates, no endless swiping, one thoughtful match at a time.
 
 You receive:
 - The user's self-description (bio)
 - Their preferred age range
 - Which pool they are seeking: men or women
-- A JSON array of **retrieved** candidate profiles (BM25-ranked subset of the pool for token efficiency; each has name, age, bio, image URL)
+- A JSON array of candidate profiles. Because the demo database is tiny, this is usually the entire age-filtered pool. Each candidate includes public profile fields and a computed_persona_graph derived from opt-in raw data sources.
+
+The computed_persona_graph is NOT raw private data. It is contextualized signal data that a production pipeline could derive from sources like prior in-app messages, AI assistant memories, maps/location routines, calendar availability, food ordering patterns, music taste, and wearable activity.
 
 TASK:
-1. Pick exactly ONE candidate who is the best match for chemistry, humor, and lifestyle fit. They MUST be within the user's age_min and age_max (inclusive).
-2. Write a short "reason" (2–4 sentences): punchy, funny, self-aware demo energy — explain why they'd click (reference specifics from BOTH bios). No cringe, no slurs, keep it PG-13.
-3. Propose ONE concrete in-person date plan ("date_plan") — specific activity, ~1–2 sentences, quirky but doable near a college campus.
-4. Name a specific fictional-but-plausible venue ("location") — e.g. "The Prism Coffee Atrium", "North Quad Bench #3 + matcha cart".
-5. Suggest a time ("suggested_time") — nod to Ditto: prefer "Next Wednesday 7:00 PM" or similar evening campus vibe.
+1. Pick exactly ONE candidate who is the best match for real-world chemistry, humor, lifestyle rhythm, emotional safety, and first-date logistics. They MUST be within the user's age_min and age_max (inclusive).
+2. Use the computed_persona_graph as stronger evidence than generic profile adjectives. Prefer concrete overlaps in food, schedule, place, message style, activity level, repair style, and values.
+3. Write a short "reason" (2–4 sentences): punchy, funny, self-aware demo energy — explain why they'd click using specifics from BOTH the user's bio and the candidate's computed signals. No cringe, no slurs, keep it PG-13.
+4. Propose ONE concrete in-person date plan ("date_plan") — specific activity, ~1–2 sentences, quirky but doable near a college campus.
+5. Name a specific fictional-but-plausible venue ("location").
+6. Suggest a time ("suggested_time") — prefer "Next Wednesday 7:00 PM" or similar evening campus vibe.
 
 OUTPUT: Return ONLY valid JSON (no markdown fences) with this exact shape:
 {
@@ -50,8 +53,9 @@ OUTPUT: Return ONLY valid JSON (no markdown fences) with this exact shape:
 }
 
 Rules:
-- The "match" object MUST copy name, age, bio, image EXACTLY from the chosen candidate in the pool (verbatim strings, same age int).
-- Do not invent people. If no candidate fits the age range, pick the closest in-range person anyway (there should always be one); never output someone not in the list.
+- The "match" object MUST copy name, age, bio, image EXACTLY from the chosen candidate in the pool (verbatim strings, same age int). Do not include computed_persona_graph in the match object.
+- Do not invent people. Never output someone not in the list.
+- Do not say you predicted compatibility. Say the agents reasoned over opt-in context.
 """
 
 
@@ -114,7 +118,13 @@ def _extract_json_object(text: str) -> dict[str, Any]:
 
 
 def _chat_llm() -> tuple[str, str, str] | None:
-    """Returns (api_key, base_url, model). Cerebras first, then OpenAI."""
+    """Returns (api_key, base_url, model). OpenRouter first for cheap demo calls."""
+    if settings.openrouter_api_key:
+        return (
+            settings.openrouter_api_key,
+            settings.openrouter_base_url,
+            settings.openrouter_model,
+        )
     if settings.cerebras_api_key:
         return (
             settings.cerebras_api_key,
@@ -141,7 +151,16 @@ async def find_match(req: MatchRequest) -> MatchResponse:
     pool_for_llm = retrieve_profiles(
         req.user_bio, pool, top_k=settings.rag_top_k
     )
-    candidates_payload = [p.model_dump() for p in pool_for_llm]
+    candidates_payload = [
+        {
+            "name": p.name,
+            "age": p.age,
+            "bio": p.bio,
+            "image": p.image,
+            "computed_persona_graph": p.persona_graph,
+        }
+        for p in pool_for_llm
+    ]
 
     llm = _chat_llm()
     if not llm:

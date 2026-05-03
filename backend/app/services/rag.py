@@ -11,7 +11,7 @@ from __future__ import annotations
 import math
 import re
 from collections import Counter
-from typing import Sequence
+from typing import Any, Sequence
 
 from app.schemas import Person
 
@@ -67,6 +67,36 @@ def _bm25_scores(
     return scores
 
 
+def _flatten_value(value: Any) -> str:
+    """Convert nested computed profile context into retrievable text."""
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, (int, float, bool)):
+        return str(value)
+    if isinstance(value, list):
+        return " ".join(_flatten_value(v) for v in value)
+    if isinstance(value, dict):
+        parts: list[str] = []
+        for key, nested in value.items():
+            parts.append(str(key).replace("_", " "))
+            parts.append(_flatten_value(nested))
+        return " ".join(parts)
+    return str(value)
+
+
+def profile_search_document(person: Person) -> str:
+    """Text document used by lightweight hybrid retrieval.
+
+    The profile JSON now contains a computed persona graph. Treat those fields as
+    first-class retrieval text so "soup dumplings", "Apple Watch", "slow replies",
+    etc. can influence candidate ordering even when the public bio is generic.
+    """
+    graph_text = _flatten_value(person.persona_graph)
+    return f"{person.name} {person.bio} {graph_text}"
+
+
 def retrieve_profiles(
     query: str,
     candidates: Sequence[Person],
@@ -75,10 +105,11 @@ def retrieve_profiles(
     k1: float = 1.5,
     b: float = 0.75,
 ) -> list[Person]:
-    """Rank candidates by BM25(user_bio vs name+bio); return top_k.
+    """Rank candidates by BM25 over bio + computed persona graph; return top_k.
 
-    If there is no lexical signal (all scores 0), returns the full sequence
-    unchanged so the LLM still sees every age-filtered profile.
+    This is not a vector DB, but it is a very cheap hybrid-RAG upgrade for the
+    tiny demo database: the LLM sees the strongest full-persona candidates, and
+    when top_k >= pool size it sees the whole age-filtered pool.
     """
     cand_list = list(candidates)
     if not cand_list:
@@ -86,7 +117,7 @@ def retrieve_profiles(
     if top_k <= 0 or len(cand_list) <= top_k:
         return cand_list
 
-    docs = [f"{p.name} {p.bio}" for p in cand_list]
+    docs = [profile_search_document(p) for p in cand_list]
     scores = _bm25_scores(query, docs, k1=k1, b=b)
     if not scores or max(scores) <= 0.0:
         return cand_list
