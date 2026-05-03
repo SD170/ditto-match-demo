@@ -1,6 +1,6 @@
 # Ditto AI
 
-Demo “one thoughtful match” web app: a **React + Vite** frontend talks to a **FastAPI** backend that **BM25-retrieves** a small slice of a fixed profile pool, then asks an **LLM** (Cerebras or OpenAI-compatible) to pick one person and write the pitch. No separate `/docs` site; this file plus the in-app **About** page (`/about`) are the overview.
+Demo “one thoughtful match” web app: a **React + Vite** frontend talks to a **FastAPI** backend that **BM25-retrieves** a small slice of a fixed profile pool, then asks an **LLM** (OpenRouter or OpenAI-compatible) to pick one person and write the pitch. No separate `/docs` site; this file plus the in-app **About** page (`/about`) are the overview.
 
 ## What it is (30 seconds)
 
@@ -54,8 +54,8 @@ Copy `backend/.env.example` → `backend/.env`. Pydantic loads from the process 
 
 | Variable | Purpose |
 |----------|---------|
-| `CEREBRAS_API_KEY` | **Preferred** if set. OpenAI-compatible Cerebras Inference (`CEREBRAS_BASE_URL`, `CEREBRAS_MODEL`). |
-| `OPENAI_API_KEY` | Used when Cerebras is unset. `OPENAI_BASE_URL` (default `https://api.openai.com/v1`), `OPENAI_MODEL` (default `gpt-4o-mini`). |
+| `OPENROUTER_API_KEY` | **Preferred** if set. `OPENROUTER_BASE_URL` (default `https://openrouter.ai/api/v1`), `OPENROUTER_MODEL` (default `openai/gpt-oss-20b:free`). |
+| `OPENAI_API_KEY` | Used when OpenRouter is unset. `OPENAI_BASE_URL` (default `https://api.openai.com/v1`), `OPENAI_MODEL` (default `gpt-4o-mini`). |
 | `CORS_ORIGINS` | Comma-separated browser origins (default includes `http://localhost:5173`). |
 | `RAG_TOP_K` | Max profiles passed to the LLM after BM25 (default `12`). |
 | `PEXELS_API_KEY` | Optional; only for `scripts/fetch_pexels_pool_images.py`. |
@@ -95,7 +95,7 @@ npm run build
 2. Render → **New** → **Blueprint** (or **Web Service**). If using the included [`render.yaml`](render.yaml), connect the repo and approve the service.
 3. In the Render dashboard, set **Environment**:
    - `CORS_ORIGINS` = your Vercel URL(s), comma-separated, e.g. `https://ditto-ai.vercel.app` (add `http://localhost:5173` if you still use local dev against prod API).
-   - `CEREBRAS_API_KEY` and/or `OPENAI_API_KEY` (and any other vars from `.env.example`).
+   - `OPENROUTER_API_KEY` and/or `OPENAI_API_KEY` (and any other vars from `.env.example`).
 4. Deploy and copy the API URL (e.g. `https://ditto-api.onrender.com`).
 
 Manual Web Service (no Blueprint): **Root Directory** = `backend`, build `pip install -r requirements.txt`, start `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.

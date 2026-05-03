@@ -90,8 +90,6 @@ def _future_us_llm() -> tuple[str, str, str] | None:
     # Prefer OpenRouter for this feature because the user can select free/cheap models.
     if settings.openrouter_api_key:
         return settings.openrouter_api_key, settings.openrouter_base_url, settings.openrouter_model
-    if settings.cerebras_api_key:
-        return settings.cerebras_api_key, settings.cerebras_base_url, settings.cerebras_model
     if settings.openai_api_key:
         return settings.openai_api_key, settings.openai_base_url, settings.openai_model
     return None

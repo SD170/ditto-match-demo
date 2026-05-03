@@ -110,7 +110,6 @@ def test_matcher_prefers_openrouter_and_sends_rich_full_pool(monkeypatch) -> Non
     monkeypatch.setattr(matcher.settings, "openrouter_api_key", "test-openrouter-key", raising=False)
     monkeypatch.setattr(matcher.settings, "openrouter_base_url", "https://openrouter.ai/api/v1", raising=False)
     monkeypatch.setattr(matcher.settings, "openrouter_model", "openai/gpt-oss-20b:free", raising=False)
-    monkeypatch.setattr(matcher.settings, "cerebras_api_key", None)
     monkeypatch.setattr(matcher.settings, "openai_api_key", None)
     monkeypatch.setattr(matcher.settings, "rag_top_k", 40, raising=False)
     monkeypatch.setattr(matcher.httpx, "AsyncClient", FakeAsyncClient)

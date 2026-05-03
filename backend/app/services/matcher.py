@@ -125,12 +125,6 @@ def _chat_llm() -> tuple[str, str, str] | None:
             settings.openrouter_base_url,
             settings.openrouter_model,
         )
-    if settings.cerebras_api_key:
-        return (
-            settings.cerebras_api_key,
-            settings.cerebras_base_url,
-            settings.cerebras_model,
-        )
     if settings.openai_api_key:
         return (
             settings.openai_api_key,

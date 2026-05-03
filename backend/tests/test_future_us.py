@@ -97,7 +97,6 @@ def test_future_us_uses_openrouter_llm_and_rich_persona_graph(monkeypatch) -> No
     monkeypatch.setattr(future_us.settings, "openrouter_api_key", "test-openrouter-key", raising=False)
     monkeypatch.setattr(future_us.settings, "openrouter_base_url", "https://openrouter.ai/api/v1", raising=False)
     monkeypatch.setattr(future_us.settings, "openrouter_model", "openai/gpt-oss-20b:free", raising=False)
-    monkeypatch.setattr(future_us.settings, "cerebras_api_key", None)
     monkeypatch.setattr(future_us.settings, "openai_api_key", None)
     monkeypatch.setattr(future_us.httpx, "AsyncClient", FakeAsyncClient)
 
@@ -116,7 +115,6 @@ def test_future_us_uses_openrouter_llm_and_rich_persona_graph(monkeypatch) -> No
 
 def test_future_us_endpoint_returns_simulation_payload(monkeypatch) -> None:
     monkeypatch.setattr(future_us.settings, "openrouter_api_key", None, raising=False)
-    monkeypatch.setattr(future_us.settings, "cerebras_api_key", None)
     monkeypatch.setattr(future_us.settings, "openai_api_key", None)
     client = TestClient(app)
 
